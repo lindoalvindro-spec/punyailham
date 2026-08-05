@@ -132,16 +132,16 @@ export default function SplashScreen({ onStart }) {
       display: 'flex', flexDirection: 'column', alignItems: 'center',
       justifyContent: 'center', overflow: 'hidden', padding: '16px 0',
     }}>
-      {/* Background Hero Photo (putri 15.jpeg) */}
+      {/* Background Hero Photo (rian 1.jpeg) */}
       <img
         ref={photoRef}
-        src="/putri 15.jpeg"
+        src="/rian 1.jpeg"
         alt="Happy Birthday Sayangku"
         style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%',
           objectFit: 'cover', opacity: 0,
         }}
-        onError={(e) => { e.target.src = '/putri 15.jpeg'; }}
+        onError={(e) => { e.target.src = '/rian 1.jpeg'; }}
       />
 
       {/* Luxury Dark Gradient Overlay for Maximum Readability */}
@@ -180,11 +180,11 @@ export default function SplashScreen({ onStart }) {
         padding: '0 20px', maxWidth: 350, width: '100%',
       }}>
 
-        {/* Floating Sparkling 20 Badge */}
+        {/* Floating Sparkling 27 Badge */}
         <div ref={num20Ref} style={{ opacity: 0, marginBottom: 8, display: 'inline-block' }}>
           <div className="sparkling-20-badge">
             <span className="sparkle-icon-left">✨</span>
-            <span className="sparkling-20-text">20</span>
+            <span className="sparkling-20-text">27</span>
             <span className="sparkle-icon-right">💖</span>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function SplashScreen({ onStart }) {
         }}>
           <Crown size={14} color="var(--gold-accent)" />
           <span className="sparkling-birthday-text">
-            Happy 20th Birthday!
+            Happy 27th Birthday!
           </span>
         </div>
 
@@ -213,13 +213,13 @@ export default function SplashScreen({ onStart }) {
           Special Exhibition Dedicated To
         </p>
 
-        {/* Main Title: Putri */}
+        {/* Main Title: Rian */}
         <h1 ref={line2Ref} style={{
           fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#fff',
           lineHeight: 1.15, marginBottom: 10, opacity: 0,
           textShadow: '0 4px 20px rgba(212, 69, 108, 0.7), 0 0 35px rgba(212, 163, 89, 0.5)',
         }}>
-          Putri
+          Rian
         </h1>
 
         {/* Birthday Wish Box & Tagline */}
@@ -230,7 +230,7 @@ export default function SplashScreen({ onStart }) {
               color: '#ffe082', margin: 0, lineHeight: 1.3,
               textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             }}>
-              "Selamat Ulang Tahun Ke-20, Princess Terfavoritku!"
+              "Selamat Ulang Tahun Ke-27, Orang Terfavoritku!"
             </p>
           </div>
 

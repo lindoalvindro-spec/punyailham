@@ -113,9 +113,9 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 boxShadow: '0 12px 32px rgba(200,59,100,0.25)',
                 position: 'relative', zIndex: 1
               }}>
-                <img src="/putri 15.jpeg" alt="Putri" style={{
+                <img src="/rian 1.jpeg" alt="Rian" style={{
                   width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center'
-                }} onError={(e) => { e.target.src = '/putri 15.jpeg'; }} />
+                }} onError={(e) => { e.target.src = '/rian 1.jpeg'; }} />
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: 'var(--pink-deep)',
                 lineHeight: 1, margin: 0
               }}>
-                Putri 💖
+                Rian 💖
               </h1>
             </div>
 
@@ -155,7 +155,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 With Endless Love & Appreciation
               </p>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: 'var(--pink-deep)' }}>
-                Happy Birthday, Putri! 🎂🌸💖
+                Happy Birthday, Rian! 🎂🌸💖
               </p>
             </div>
 

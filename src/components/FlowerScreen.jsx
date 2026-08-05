@@ -198,7 +198,7 @@ export default function FlowerScreen({ onRestart }) {
                 letterSpacing: '-0.5px',
                 textShadow: '0 2px 10px rgba(212, 69, 108, 0.2)',
               }}>
-                Pretty Girl 🌸✨
+                Favorite Person 🌸✨
               </h2>
             </div>
 
@@ -215,7 +215,7 @@ export default function FlowerScreen({ onRestart }) {
               textAlign: 'left',
             }}>
               <p style={{ marginBottom: 12, fontWeight: 500 }}>
-                Bunga ini mungkin sederhana, tapi setiap kelopaknya punya alasan khusus—just like how you bring so much beauty, warmth, and joy into my everyday life. Senyuman Putri, tawa manismu, dan kebaikan hatimu selalu jadi hal favoritku. No matter how beautiful these flowers look, they will never outshine your smile. Happy 20th Birthday, my love! 💖
+                Bunga ini mungkin sederhana, but every single petal carries a special wish for you. Thank you for always bringing so much warmth, laughter, and positive vibes into my days. Semoga di usia ke-27 ini, Rian makin sukses, bahagia, dan selalu dikelilingi hal-hal baik. Wishing you the happiest 27th Birthday! 🎉✨
               </p>
               
               <div style={{
@@ -227,7 +227,7 @@ export default function FlowerScreen({ onRestart }) {
                 color: 'var(--pink-deep)',
                 lineHeight: 1.35,
               }}>
-                Thank you for being the sweetest part of my life and making my heart feel at home. ♡
+                Thank you for being such an amazing person and making every day brighter. Cheers to 27! 🥂✨
               </div>
             </div>
 

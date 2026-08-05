@@ -43,8 +43,8 @@ function LetterTab() {
           width: 36, height: 12, background: 'rgba(212,163,89,0.4)',
           borderRadius: 2, backdropFilter: 'blur(4px)', zIndex: 10
         }} />
-        <img src="/putri 9.jpeg" alt="Putri" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          onError={(e) => { e.target.src = '/putri 9.jpeg'; }} />
+        <img src="/rian 3.jpeg" alt="Rian" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          onError={(e) => { e.target.src = '/rian 3.jpeg'; }} />
       </div>
 
       {/* Opening Badge Header */}
@@ -66,13 +66,13 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.65rem', color: 'var(--pink-deep)',
           lineHeight: 1.2, margin: '4px 0 10px 0'
         }}>
-          Dearest Putri,
+          Dearest Rian,
         </h3>
       </div>
 
       {/* Paragraph 1 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500, letterSpacing: '0.2px' }}>
-        Happy 20th Birthday to someone who means so much to me! Di hari yang spesial ini, aku cuma mau bilang betapa bersyukurnya aku punya kamu dalam hidupku. Thank you for always being you, and for bringing so much warmth and light into my days.
+        Happy 27th Birthday to someone who means so much to me! Di hari yang spesial ini, aku cuma mau bilang betapa bersyukurnya aku punya kamu dalam hidupku. Thank you for always being you, and for bringing so much warmth and light into my days.
       </p>
 
       {/* Paragraph 2 */}
@@ -101,19 +101,19 @@ function LetterTab() {
             lineHeight: 1.75,
             fontWeight: 600,
           }}>
-            "Happy 20th Birthday, my favorite person. Aku selalu berdoa supaya di usiamu yang baru ini, Putri bisa makin bahagia, selalu merasa dicintai, dan makin percaya sama potensi diri sendiri. No matter what comes next, I'll always be right here supporting you."
+            "Happy 27th Birthday, my favorite person. Aku selalu berdoa supaya di usiamu yang baru ini, Rian bisa makin bahagia, selalu merasa dicintai, dan makin percaya sama potensi diri sendiri. No matter what comes next, I'll always be right here supporting you."
           </p>
         </div>
       </div>
 
       {/* Paragraph 3 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        I feel super lucky to see you grow into such a kind, smart, and wonderful person. Semoga di umur 20 ini, semua impian dan cita-cita yang lagi Putri perjuangkan bisa perlahan terwujud satu per satu.
+        I feel super lucky to see you grow into such a kind, smart, and wonderful person. Semoga di umur 27 ini, semua impian dan cita-cita yang lagi Rian perjuangkan bisa perlahan terwujud satu per satu.
       </p>
 
       {/* Paragraph 4 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        Stay healthy, stay humble, and keep spreading that bright smile of yours. Once again, happy 20th birthday, Putri! Let's make more beautiful memories together. 💖
+        Stay healthy, stay humble, and keep spreading that bright smile of yours. Once again, happy 27th birthday, Rian! Let's make more beautiful memories together. 💖
       </p>
 
       {/* Paragraph 5 */}
@@ -133,7 +133,7 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: 'var(--pink-deep)',
           lineHeight: 1.35, margin: 0, fontWeight: 700
         }}>
-          Happy 20th Birthday, Putri! Thank you for being my favorite part of every day. 🎂✨💖
+          Happy 27th Birthday, Rian! Thank you for being my favorite part of every day. 🎂✨💖
         </p>
       </div>
     </div>
@@ -170,7 +170,7 @@ function ImpianTab() {
       icon: '🌟',
       badge: 'DREAM 02',
       title: 'Always Support Your Dreams',
-      text: 'Selalu ada di samping Putri untuk mendukung setiap impian, karir, dan passion yang kamu suka. I will always be your biggest supporter.',
+      text: 'Selalu ada di samping Rian untuk mendukung setiap impian, karir, dan passion yang kamu suka. I will always be your biggest supporter.',
       gradient: 'linear-gradient(135deg, rgba(200,59,100,0.15), rgba(255,232,238,0.3))',
     },
     {
@@ -292,11 +292,11 @@ function WishesTab() {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
         {[
-          <span>Semoga di usiamu yang ke-20 ini, Putri selalu sehat, selalu merasa tenang, dan makin dilancarkan setiap urusannya. 🤲🏻💖</span>,
+          <span>Semoga di usiamu yang ke-27 ini, Rian selalu sehat, selalu merasa tenang, dan makin dilancarkan setiap urusannya. 🤲🏻💖</span>,
           <span>May your beautiful, genuine smile always bring happiness to everyone around you and brighten up your days! ✨</span>,
-          <span>Semoga semua wishlist, impian, dan hal-hal yang lagi Putri usahakan sekarang bisa terwujud satu per satu dengan indah. 🌸</span>,
+          <span>Semoga semua wishlist, impian, dan hal-hal yang lagi Rian usahakan sekarang bisa terwujud satu per satu dengan indah. 🌸</span>,
           <span>May our bond grow even warmer, sweeter, and more mature with each passing day. 🥂</span>,
-          <span>Terima kasih sudah jadi sosok yang selalu bikin hari-hariku terasa lebih indah. Happy 20th Birthday, my favorite person! 🎂🎁💝</span>
+          <span>Terima kasih sudah jadi sosok yang selalu bikin hari-hariku terasa lebih indah. Happy 27th Birthday, my favorite person! 🎂🎁💝</span>
         ].map((item, i) => (
           <div key={i} ref={(el) => itemsRef.current.push(el)} style={{
             display: 'flex', gap: 12, alignItems: 'flex-start',
@@ -395,7 +395,7 @@ export default function LoveLetter({ onNext }) {
           }}>Surat Ulang Tahun</h2>
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: 'var(--pink-deep)', fontWeight: 600,
-          }}>Untuk Putri 💖</p>
+          }}>Untuk Rian 💖</p>
 
           <div style={{
             marginTop: 24, fontSize: '0.75rem', fontWeight: 700,
@@ -421,7 +421,7 @@ export default function LoveLetter({ onNext }) {
             <h1 style={{
               fontFamily: 'var(--font-display)', fontSize: '1.85rem', color: 'var(--pink-deep)',
               lineHeight: 1.15, marginBottom: 4,
-            }}>Happy Birthday, Putri! 🎂✨</h1>
+            }}>Happy Birthday, Rian! 🎂✨</h1>
             <p style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: 'var(--rose-gold)', fontWeight: 600,
             }}>Surat cinta dan doa terbaik untuk sayangku 🌸</p>

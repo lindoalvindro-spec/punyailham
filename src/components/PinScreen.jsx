@@ -5,7 +5,7 @@ import gsap from 'gsap';
 export default function PinScreen({ onUnlock }) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
-  const correctPin = '230806';
+  const correctPin = '120426';
   const cardRef = useRef(null);
   const dotsRef = useRef([]);
   const lockRef = useRef(null);
@@ -90,7 +90,7 @@ export default function PinScreen({ onUnlock }) {
           fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: 'var(--pink-deep)',
           textAlign: 'center', fontWeight: 600, marginBottom: 22, opacity: 0.9,
         }}>
-          Masukkan PIN rahasia Putri 💕
+          Masukkan PIN rahasia Rian 💕
         </p>
 
         {/* PIN Dots */}
