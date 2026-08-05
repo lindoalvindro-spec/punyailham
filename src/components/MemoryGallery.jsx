@@ -9,10 +9,9 @@ export default function MemoryGallery({ onNext }) {
 
   const exhibits = [
     { src: '/rian 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
-    { src: '/rian 2.jpeg', tag: 'EXHIBIT #02', title: 'Charming Smile 💖' },
-    { src: '/rian 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Joyful ✨' },
-    { src: '/rian 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Smile ☀️' },
-    { src: '/rian 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
+    { src: '/rian 3.jpeg', tag: 'EXHIBIT #02', title: 'Cool & Joyful ✨' },
+    { src: '/rian 4.jpeg', tag: 'EXHIBIT #03', title: 'Warm Smile ☀️' },
+    { src: '/rian 5.jpeg', tag: 'EXHIBIT #04', title: 'Precious Moments 💎' },
   ];
 
   useEffect(() => {
