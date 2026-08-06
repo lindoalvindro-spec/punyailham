@@ -82,7 +82,7 @@ export default function PuzzleScreen({ onComplete }) {
             color: '#4a6b34', fontSize: '0.7rem', fontWeight: 700, letterSpacing: 1,
             textTransform: 'uppercase', marginBottom: 10
           }}>
-            <Puzzle size={12} /> Matcha Exhibition Vault 🍵
+            <Puzzle size={12} /> Galeri Kenangan 🍵
           </div>
           <h2 style={{
             fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--berry)', 
@@ -94,7 +94,7 @@ export default function PuzzleScreen({ onComplete }) {
             fontFamily: 'var(--font-cute)', fontSize: '0.85rem', color: '#2563eb', 
             fontWeight: 600, opacity: 0.9
           }}>
-            Susun foto untuk membuka ruang pameran utama 🍵✨
+            Susun potongan kenangan untuk membuka galeri utama 🌿
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function PuzzleScreen({ onComplete }) {
                   <div style={{
                     width: '300%', height: '300%', position: 'absolute', 
                     top: `${-srcRow * 100}%`, left: `${-srcCol * 100}%`,
-                    backgroundImage: 'url(/wildan%203.jpeg)', backgroundSize: 'cover',
+                    backgroundImage: 'url(/james%203.jfif)', backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }} />
                 )}
@@ -185,7 +185,7 @@ export default function PuzzleScreen({ onComplete }) {
                 width: '85%', aspectRatio: '1', borderRadius: 16, overflow: 'hidden',
                 boxShadow: '0 12px 32px rgba(212,69,108,0.25)', marginBottom: 16
               }}>
-                <img src="/wildan 3.jpeg" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="/james 3.jfif" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <span style={{ 
                 color: 'var(--pink-deep)', fontSize: '0.75rem', fontWeight: 700,
@@ -203,10 +203,10 @@ export default function PuzzleScreen({ onComplete }) {
               color: 'var(--pink-deep)', fontWeight: 800, fontSize: '1rem', fontFamily: 'var(--font-display)',
               display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginBottom: 16,
             }}>
-              <CheckCircle2 size={18} /> PUZZLE BERHASIL DISUSUN! 🎉
+              <CheckCircle2 size={18} /> KENANGAN BERHASIL TERSUSUN ✨
             </div>
             <button className="btn-primary" onClick={onComplete} style={{ width: '100%' }}>
-              Buka Dedikasi Spesial <ArrowRight size={16} />
+              Buka Surat Ucapan <ArrowRight size={16} />
             </button>
           </div>
         ) : (
@@ -214,7 +214,7 @@ export default function PuzzleScreen({ onComplete }) {
             width: '100%', background: 'rgba(212,69,108,0.04)', borderRadius: 16, 
             padding: '12px', fontSize: '0.85rem'
           }}>
-            Lewati Puzzle & Lanjut
+            Lanjutkan Langsung
           </button>
         )}
       </div>

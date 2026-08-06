@@ -43,8 +43,8 @@ function LetterTab() {
           width: 36, height: 12, background: 'rgba(122,154,96,0.4)',
           borderRadius: 2, backdropFilter: 'blur(4px)', zIndex: 10
         }} />
-        <img src="/wildan 5.jpeg" alt="Wildan" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          onError={(e) => { e.target.src = '/wildan 5.jpeg'; }} />
+        <img src="/james 5.jfif" alt="James" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          onError={(e) => { e.target.src = '/james 5.jfif'; }} />
       </div>
 
       {/* Opening Badge Header */}
@@ -57,7 +57,7 @@ function LetterTab() {
         }}>
           <Sparkles size={13} color="#2563eb" />
           <span style={{ fontFamily: 'var(--font-cute)', fontSize: '0.8rem', fontWeight: 700, color: '#1e40af', letterSpacing: '0.5px' }}>
-            HAPPY BIRTHDAY, MY LOVE!! 🍵🎂✨
+            HAPPY 21ST BIRTHDAY, JAMES 🍵✨
           </span>
         </div>
 
@@ -66,18 +66,18 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.65rem', color: '#1e40af',
           lineHeight: 1.2, margin: '4px 0 10px 0'
         }}>
-          Dearest Wildan,
+          Dearest James,
         </h3>
       </div>
 
       {/* Paragraph 1 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500, letterSpacing: '0.2px' }}>
-        Selamat ulang tahun ya, Mas. Semoga langkah Mas selalu dipenuhi hal-hal baik, sehatnya panjang, rezekinya lapang, dan semua doa yang Mas simpan satu-satu menemukan jalannya.
+        Selamat ulang tahun yang ke-21, James. Semoga setiap langkahmu senantiasa dipenuhi keberkahan, kesehatan, dan kelancaran dalam meraih setiap impian baikmu.
       </p>
 
       {/* Paragraph 2 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 16, fontWeight: 500 }}>
-        Za nggak tahu nanti akhirnya cerita kita akan seperti apa. Tapi kalau boleh jujur, Za bersyukur pernah mengenal Mas. Terima kasih sudah menjadi seseorang yang, tanpa sadar, berhasil membuat Za melihat dunia dengan perasaan yang berbeda.
+        Terima kasih telah menjadi pribadi yang hangat dan luar biasa. Bersyukur bisa mengenalmu dan menjadi bagian dari perjalanan yang berharga ini.
       </p>
 
       {/* 🌟 Romantic Quote Highlight Box */}
@@ -101,14 +101,14 @@ function LetterTab() {
             lineHeight: 1.75,
             fontWeight: 600,
           }}>
-            "Kalau semesta benar-benar memberikan kesempatan untuk memulai hidup dari awal, bahkan berkali-kali, rasanya Za tetap akan memilih bertemu Mas lagi. Bukan karena Za tahu akhirnya akan bahagia, tapi karena mengenal Mas saja sudah menjadi salah satu hal yang paling Za syukuri."
+            "Setiap momen dan kenangan yang tercipta bersamamu selalu menjadi bagian berharga dalam perjalanan ini. Terima kasih telah hadir dan memberi banyak arti."
           </p>
         </div>
       </div>
 
       {/* Paragraph 3 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        Selamat bertambah usia, Mas. Semoga di umur yang baru, Mas selalu dikelilingi orang-orang yang benar-benar menyayangi Mas. Dan kalau suatu hari nanti takdir mengizinkan, semoga Za masih diberi kesempatan untuk ikut menjadi bagian kecil dari kebahagiaan Mas.
+        Selamat bertambah usia. Semoga di usiamu yang baru ini, kamu senantiasa dikelilingi oleh kebahagiaan, kedamaian, dan orang-orang yang tulus menyayangimu.
       </p>
 
       {/* Handwritten Sign-Off Card */}
@@ -123,7 +123,7 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#1e40af',
           lineHeight: 1.35, margin: 0, fontWeight: 700
         }}>
-          Sekali lagi, selamat ulang tahun ya, Mas. 🍵🎂💙
+          Selamat Ulang Tahun yang ke-21, James 🍵✨
         </p>
       </div>
     </div>
@@ -160,7 +160,7 @@ function ImpianTab() {
       icon: '🌟',
       badge: 'DREAM 02',
       title: 'Endless Support From Afar',
-      text: 'Meskipun jauh, aku bakal selalu ada buat dengerin cerita kamu, dukung setiap langkah, impian, dan karir Wildan. You will never walk alone.',
+      text: 'Meskipun jauh, aku bakal selalu ada buat dengerin cerita kamu, dukung setiap langkah, impian, dan karir James. You will never walk alone.',
       gradient: 'linear-gradient(135deg, rgba(59,130,246,0.2), rgba(220,252,231,0.4))',
     },
     {
@@ -191,7 +191,7 @@ function ImpianTab() {
         <h4 style={{
           fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#1e40af',
           lineHeight: 1.2
-        }}>Impian & Masa Depan 💫</h4>
+        }}>Harapan & Masa Depan 🌿</h4>
       </div>
 
       {dreams.map((item, i) => (
@@ -282,11 +282,11 @@ function WishesTab() {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
         {[
-          <span>Semoga di usiamu yang ke-100 ini, Wildan selalu diberikan kesehatan, kelancaran rezeki, dan perlindungan di mana pun kamu berada. 🤲🏻💖</span>,
+          <span>Semoga di usiamu yang ke-21 ini, James selalu diberikan kesehatan, kelancaran rezeki, dan perlindungan di mana pun kamu berada. 🤲🏻💖</span>,
           <span>May your days be filled with endless joy and peace, and may the distance never fade that sweet, beautiful smile of yours! ✨</span>,
           <span>Semoga rasa rindu di antara kita selalu jadi penguat ikatan cinta dan kedewasaan hubungan kita setiap harinya. 🌸</span>,
-          <span>May all your dreams, ambitions, and wishes at 100 come true beautifully, one by one. 🥂</span>,
-          <span>Terima kasih udah bertahan dan selalu memperjuangkan hubungan LDR ini bareng aku. Happy 100th Birthday, my love! 🎂🎁💝</span>
+          <span>May all your dreams, ambitions, and wishes at 21 come true beautifully, one by one. 🥂</span>,
+          <span>Terima kasih udah bertahan dan selalu memperjuangkan hubungan LDR ini bareng aku. Happy 21st Birthday, my love! 🎂🎁💝</span>
         ].map((item, i) => (
           <div key={i} ref={(el) => itemsRef.current.push(el)} style={{
             display: 'flex', gap: 12, alignItems: 'flex-start',
@@ -346,8 +346,8 @@ export default function LoveLetter({ onNext }) {
 
   const tabs = [
     { id: 'letter', label: '💌 Surat' },
-    { id: 'reasons', label: '🍵 Impian' },
-    { id: 'wishes', label: '🎁 Doa' },
+    { id: 'reasons', label: '🌿 Harapan' },
+    { id: 'wishes', label: '✨ Doa' },
   ];
 
   return (
@@ -385,7 +385,7 @@ export default function LoveLetter({ onNext }) {
           }}>Surat Ulang Tahun</h2>
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#2563eb', fontWeight: 600,
-          }}>Untuk Wildan 🍵💙</p>
+          }}>Untuk James 🍵✨</p>
 
           <div style={{
             marginTop: 24, fontSize: '0.75rem', fontWeight: 700,
@@ -393,7 +393,7 @@ export default function LoveLetter({ onNext }) {
             padding: '8px 18px', borderRadius: 20, display: 'inline-block',
             border: '1.5px solid rgba(122,154,96,0.3)',
           }}>
-            👆 Ketuk untuk membuka surat
+            Ketuk untuk membuka surat
           </div>
         </div>
       )}
@@ -411,10 +411,10 @@ export default function LoveLetter({ onNext }) {
             <h1 style={{
               fontFamily: 'var(--font-display)', fontSize: '1.85rem', color: '#1e40af',
               lineHeight: 1.15, marginBottom: 4,
-            }}>Happy Birthday, Wildan! 🎂✨</h1>
+            }}>Happy Birthday, James! 🎂✨</h1>
             <p style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: '#4a6b34', fontWeight: 600,
-            }}>Surat cinta dan doa terbaik untuk sayangku 🌸</p>
+            }}>Pesan hangat dan doa terbaik di usiamu yang ke-21 🌿</p>
           </div>
 
           {/* Navigation */}
@@ -439,7 +439,7 @@ export default function LoveLetter({ onNext }) {
 
           {/* CTA Button */}
           <button className="btn-primary" onClick={onNext} style={{ width: '100%', marginTop: 20 }}>
-            Lanjut ke Tiup Lilin! 🎂 <ArrowRight size={16} />
+            Lanjutkan ke Momen Lilin 🕯️ <ArrowRight size={16} />
           </button>
         </div>
       )}

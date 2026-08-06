@@ -187,7 +187,7 @@ export default function FlowerScreen({ onRestart }) {
                 fontStyle: 'italic',
                 lineHeight: 1.1,
               }}>
-                Matcha & Flowers for my
+                A Special Bouquet For
               </div>
               <h2 style={{
                 fontFamily: 'var(--font-display)',
@@ -198,7 +198,7 @@ export default function FlowerScreen({ onRestart }) {
                 letterSpacing: '-0.5px',
                 textShadow: '0 2px 10px rgba(59, 130, 246, 0.2)',
               }}>
-                Favorite Person 🍵💙
+                James 🍵✨
               </h2>
             </div>
 
@@ -215,7 +215,7 @@ export default function FlowerScreen({ onRestart }) {
               textAlign: 'left',
             }}>
               <p style={{ marginBottom: 12, fontWeight: 500 }}>
-                Selamat ulang tahun ya, Mas. Semoga di umur yang baru, Mas selalu dikelilingi orang-orang yang benar-benar menyayangi Mas. Terima kasih sudah menjadi seseorang yang berhasil membuat Za melihat dunia dengan perasaan yang berbeda. 🍵✨
+                Selamat ulang tahun yang ke-21, James. Semoga di usia yang baru ini, kamu senantiasa dikelilingi kebahagiaan, kedamaian, dan kehangatan. Terima kasih atas segala kebaikan dan inspirasi yang kamu hadirkan. 🍵✨
               </p>
               
               <div style={{
@@ -227,7 +227,7 @@ export default function FlowerScreen({ onRestart }) {
                 color: '#1e40af',
                 lineHeight: 1.35,
               }}>
-                Sekali lagi, selamat ulang tahun ya, Mas. 🍵💙✨
+                Selamat Ulang Tahun Ke-21, James 🍵✨
               </div>
             </div>
 
@@ -245,7 +245,7 @@ export default function FlowerScreen({ onRestart }) {
             fontSize: '0.9rem',
           }}
         >
-          Ulangi Kejutan Pameran 🔄
+          Ulangi Tampilan 🔄
         </button>
       </div>
 

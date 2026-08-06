@@ -5,7 +5,7 @@ import gsap from 'gsap';
 export default function PinScreen({ onUnlock }) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
-  const correctPin = '080826';
+  const correctPin = '111111';
   const cardRef = useRef(null);
   const dotsRef = useRef([]);
   const lockRef = useRef(null);
@@ -84,13 +84,13 @@ export default function PinScreen({ onUnlock }) {
           fontFamily: 'var(--font-display)', fontSize: '1.75rem', color: 'var(--berry)',
           textAlign: 'center', lineHeight: 1.2, marginBottom: 4,
         }}>
-          VIP Pass Verification 🍵✨
+          Akses Galeri Spesial 🍵✨
         </h1>
         <p style={{
           fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: '#2563eb',
           textAlign: 'center', fontWeight: 600, marginBottom: 22, opacity: 0.9,
         }}>
-          Masukkan PIN rahasia Wildan 🍵💙
+          Masukkan kode sandi akses 🍵
         </p>
 
         {/* PIN Dots */}
@@ -122,7 +122,7 @@ export default function PinScreen({ onUnlock }) {
             marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             border: '1px solid rgba(212,69,108,0.25)',
           }}>
-            <AlertCircle size={14} /> PIN salah, coba lagi ya!
+            <AlertCircle size={14} /> Kode akses tidak sesuai. Silakan coba lagi.
           </div>
         )}
 

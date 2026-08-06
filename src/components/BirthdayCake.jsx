@@ -179,14 +179,14 @@ export default function BirthdayCake({ onShowGallery }) {
             <h2 style={{
               fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--berry)',
               lineHeight: 1.15, marginBottom: 4
-            }}>Make a Wish, Sayang! 🍵✨</h2>
+            }}>Make a Wish, James 🍵✨</h2>
             <Sparkles size={18} color="#3b82f6" />
           </div>
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#2563eb',
             fontWeight: 600, margin: 0, opacity: 0.9, transition: 'all 0.3s ease'
           }}>
-            {lit ? 'Ketuk kue/lilin untuk memadamkannya 🕯️' : '✨ Wish kamu terkirim indah ke langit! 🎉'}
+            {lit ? 'Ketuk lilin untuk memadamkan apinya 🕯️' : '✨ Doa dan harapanmu telah terpanjatkan 🌿'}
           </p>
         </div>
 
@@ -288,7 +288,7 @@ export default function BirthdayCake({ onShowGallery }) {
                 fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#1e40af',
                 fontWeight: 700, letterSpacing: '0.5px', margin: 0, lineHeight: 1.1
               }}>
-                Happy Birthday Wildan! 🍵💙
+                Happy Birthday James! 🍵💙
               </span>
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function BirthdayCake({ onShowGallery }) {
             <span style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: 'var(--pink-deep)', fontWeight: 700
             }}>
-              Lilin telah terpadamkan dengan indah! ✨
+              Lilin telah dipadamkan dengan indah ✨
             </span>
           </div>
         )}
@@ -329,11 +329,11 @@ export default function BirthdayCake({ onShowGallery }) {
         {/* CTA Button */}
         {lit ? (
           <button className="btn-primary" onClick={blow} style={{ width: '100%', padding: '16px 20px', fontSize: '0.95rem' }}>
-            <Flame size={18} fill="#fff" /> Tiup Lilin Sekarang! ✨
+            <Flame size={18} fill="#fff" /> Tiup Lilin 🕯️
           </button>
         ) : (
           <button className="btn-primary" onClick={onShowGallery} style={{ width: '100%', padding: '16px 20px', fontSize: '0.95rem' }}>
-            Masuk Galeri Museum 🏛️ <Camera size={18} />
+            Lihat Galeri Foto 📷 <Camera size={18} />
           </button>
         )}
       </div>

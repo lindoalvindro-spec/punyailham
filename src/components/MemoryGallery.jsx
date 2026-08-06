@@ -9,13 +9,13 @@ export default function MemoryGallery({ onNext }) {
   const containerRef = useRef(null);
 
   const exhibits = [
-    { src: '/wildan 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
-    { src: '/wildan 2.jpeg', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
-    { src: '/wildan 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
-    { src: '/wildan 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
-    { src: '/wildan 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
-    { src: '/wildan 6.jpeg', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
-    { src: '/wildan 7.jpeg', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
+    { src: '/james 1.jfif', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
+    { src: '/james 2.jfif', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
+    { src: '/james 3.jfif', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
+    { src: '/james 4.jfif', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
+    { src: '/james 5.jfif', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
+    { src: '/james 6.jfif', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
+    { src: '/james 7.jfif', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
   ];
 
   useEffect(() => {
@@ -109,14 +109,14 @@ export default function MemoryGallery({ onNext }) {
         }}>
           <Sparkles size={13} color="#4a6b34" />
           <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#4a6b34', letterSpacing: 1.5, textTransform: 'uppercase' }}>
-            The Matcha & Love Exhibition 🍵
+            Galeri Foto & Kenangan 🍵
           </span>
         </div>
         <h1 style={{
           fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: '#1e40af',
           lineHeight: 1.15, marginBottom: 6, letterSpacing: '-0.5px'
         }}>
-          Wildan’s Photo Gallery 🍵💙
+          Galeri Foto James 🍵✨
         </h1>
       </div>
 
@@ -162,7 +162,7 @@ export default function MemoryGallery({ onNext }) {
               width: '100%', height: '100%', objectFit: 'cover',
               transformOrigin: 'center center'
             }}
-            onError={(e) => { e.target.src = '/wildan 1.jpeg'; }}
+            onError={(e) => { e.target.src = '/james 1.jfif'; }}
           />
 
           {/* Lightbox Inspect Trigger */}
@@ -267,7 +267,7 @@ export default function MemoryGallery({ onNext }) {
 
       {/* Next Button */}
       <button className="gallery-controls btn-primary" onClick={onNext} style={{ width: '100%', maxWidth: 370 }}>
-        Lanjut ke Kartu Ucapan Souvenir 🎴 <ArrowRight size={16} />
+        Lanjutkan ke Kartu Ucapan 🎴 <ArrowRight size={16} />
       </button>
     </div>
   );

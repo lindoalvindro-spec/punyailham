@@ -132,16 +132,16 @@ export default function SplashScreen({ onStart }) {
       display: 'flex', flexDirection: 'column', alignItems: 'center',
       justifyContent: 'center', overflow: 'hidden', padding: '16px 0',
     }}>
-      {/* Background Hero Photo (wildan 1.jpeg) */}
+      {/* Background Hero Photo (james 1.jfif) */}
       <img
         ref={photoRef}
-        src="/wildan 1.jpeg"
+        src="/james 1.jfif"
         alt="Happy Birthday Sayangku"
         style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%',
           objectFit: 'cover', opacity: 0,
         }}
-        onError={(e) => { e.target.src = '/wildan 1.jpeg'; }}
+        onError={(e) => { e.target.src = '/james 1.jfif'; }}
       />
 
       {/* Luxury Dark Gradient Overlay for Maximum Readability */}
@@ -184,7 +184,7 @@ export default function SplashScreen({ onStart }) {
         <div ref={num20Ref} style={{ opacity: 0, marginBottom: 8, display: 'inline-block' }}>
           <div className="sparkling-20-badge">
             <span className="sparkle-icon-left">✨</span>
-            <span className="sparkling-20-text">100</span>
+            <span className="sparkling-20-text">21</span>
             <span className="sparkle-icon-right">🍵</span>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function SplashScreen({ onStart }) {
         }}>
           <Crown size={14} color="var(--gold-accent)" />
           <span className="sparkling-birthday-text">
-            Happy 100th Birthday! 🍵✨
+            Happy 21st Birthday! 🍵✨
           </span>
         </div>
 
@@ -213,13 +213,13 @@ export default function SplashScreen({ onStart }) {
           Special Exhibition Dedicated To
         </p>
 
-        {/* Main Title: Wildan */}
+        {/* Main Title: James */}
         <h1 ref={line2Ref} style={{
           fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#fff',
           lineHeight: 1.15, marginBottom: 10, opacity: 0,
           textShadow: '0 4px 20px rgba(59, 130, 246, 0.7), 0 0 35px rgba(122, 154, 96, 0.5)',
         }}>
-          Wildan
+          James
         </h1>
 
         {/* Birthday Wish Box & Tagline */}
@@ -230,7 +230,7 @@ export default function SplashScreen({ onStart }) {
               color: '#dcfce7', margin: 0, lineHeight: 1.3,
               textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             }}>
-              "Selamat Ulang Tahun Ke-100, Orang Terfavoritku!" 🍵💙
+              "Selamat Ulang Tahun yang ke-21, James" 🍵✨
             </p>
           </div>
 
@@ -239,7 +239,7 @@ export default function SplashScreen({ onStart }) {
             color: '#bfdbfe', fontWeight: 600, marginBottom: 20,
             letterSpacing: '0.5px'
           }}>
-            The Museum of Matcha, Love & Memories 🍃✨
+            A Special Dedicated Collection of Moments & Memories 🌿✨
           </p>
         </div>
 
@@ -260,7 +260,7 @@ export default function SplashScreen({ onStart }) {
           onPointerUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
           onPointerLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
         >
-          Masuk Pameran Ulang Tahun 🍵💙
+          Jelajahi Galeri Ulang Tahun 🍃
         </button>
 
       </div>
