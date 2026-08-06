@@ -43,8 +43,8 @@ function LetterTab() {
           width: 36, height: 12, background: 'rgba(212,163,89,0.4)',
           borderRadius: 2, backdropFilter: 'blur(4px)', zIndex: 10
         }} />
-        <img src="/rian 3.jpeg" alt="Rian" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          onError={(e) => { e.target.src = '/rian 3.jpeg'; }} />
+        <img src="/hewit 3.jpeg" alt="Hewit" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          onError={(e) => { e.target.src = '/hewit 3.jpeg'; }} />
       </div>
 
       {/* Opening Badge Header */}
@@ -66,18 +66,18 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.65rem', color: 'var(--pink-deep)',
           lineHeight: 1.2, margin: '4px 0 10px 0'
         }}>
-          Dearest Rian,
+          Dearest Hewit,
         </h3>
       </div>
 
       {/* Paragraph 1 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500, letterSpacing: '0.2px' }}>
-        Happy 27th Birthday to someone who means so much to me! Di hari yang spesial ini, aku cuma mau bilang betapa bersyukurnya aku punya kamu dalam hidupku. Thank you for always being you, and for bringing so much warmth and light into my days.
+        Happy 19th Birthday to my favorite person in the whole wide world! Di hari yang sangat spesial ini, walau kita terpisah jarak dan kilometer, ketahuilah kalau hatiku selalu ada di samping kamu. Distance means so little when someone means so much.
       </p>
 
       {/* Paragraph 2 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 16, fontWeight: 500 }}>
-        Every little moment with you always feels so comforting. Di tengah ramainya hari dan rasa lelah, tawa kamu selalu jadi alasan terbaik untuk bikin mood aku balik lagi. Being around you just feels like home.
+        I know LDR itu nggak selalu mudah. Ada rasa kangen yang kadang bikin rindu setengah mati, tempat-tempat yang pengen kita datengin bareng, dan pelukan hangat yang harus ditunda dulu. Tapi di setiap rindu itu, aku makin sadar betapa berharganya kamu buat aku. Having you in my life, even from afar, is my biggest blessing.
       </p>
 
       {/* 🌟 Romantic Quote Highlight Box */}
@@ -101,24 +101,24 @@ function LetterTab() {
             lineHeight: 1.75,
             fontWeight: 600,
           }}>
-            "Happy 27th Birthday, my favorite person. Aku selalu berdoa supaya di usiamu yang baru ini, Rian bisa makin bahagia, selalu merasa dicintai, dan makin percaya sama potensi diri sendiri. No matter what comes next, I'll always be right here supporting you."
+            "Miles apart, but always close at heart. Di umur 19 ini, aku selalu berdoa supaya Hewit selalu merasa dicintai, dijaga, dan dikelilingi kebahagiaan. Distance is just a test to see how far love can travel, and ours travels to the moon and back."
           </p>
         </div>
       </div>
 
       {/* Paragraph 3 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        I feel super lucky to see you grow into such a kind, smart, and wonderful person. Semoga di umur 27 ini, semua impian dan cita-cita yang lagi Rian perjuangkan bisa perlahan terwujud satu per satu.
+        Aku bangga banget liat Hewit tumbuh jadi pribadi yang semakin hebat, bijak, dan luar biasa. Semoga di usia ke-19 ini, semua impian dan cita-cita yang lagi kamu perjuangkan bisa tercapai satu per satu. I will always be your loudest cheerleader from here!
       </p>
 
       {/* Paragraph 4 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        Stay healthy, stay humble, and keep spreading that bright smile of yours. Once again, happy 27th birthday, Rian! Let's make more beautiful memories together. 💖
+        Tetap jadi Hewit yang hangat, selalu menyebarkan senyum manis, dan penuh semangat ya. Sabar yaa, nanti waktu yang tepat bakal mempertemukan kita lagi dengan pelukan hangat yang paling kita tunggu-tunggu. Once again, happy 19th birthday, my love! Let's make more sweet memories together. 💖
       </p>
 
       {/* Paragraph 5 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 18, fontWeight: 500 }}>
-        Thank you for making my world a so much happier place just by being in it.
+        Thank you for making my world a so much happier place just by being in it, no matter how many miles are between us.
       </p>
 
       {/* Handwritten Sign-Off Card */}
@@ -133,7 +133,7 @@ function LetterTab() {
           fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: 'var(--pink-deep)',
           lineHeight: 1.35, margin: 0, fontWeight: 700
         }}>
-          Happy 27th Birthday, Rian! Thank you for being my favorite part of every day. 🎂✨💖
+          Happy 19th Birthday, Hewit! Counting down the days until I can finally hold you close. 🎂✨💖
         </p>
       </div>
     </div>
@@ -160,31 +160,31 @@ function ImpianTab() {
 
   const dreams = [
     {
-      icon: '🎂',
+      icon: '✈️',
       badge: 'DREAM 01',
-      title: 'Growing Together',
-      text: 'Bisa terus merayakan setiap momen berharga dan ulang tahun bareng, supporting each other and growing into better versions of ourselves.',
+      title: 'Closing The Distance',
+      text: 'Bisa segera ketemu, ngobrol langsung tanpa terhalang layar HP, dan jalan-jalan bareng menghabiskan waktu tanpa perlu buru-buru bilang pamit.',
       gradient: 'linear-gradient(135deg, rgba(212,163,89,0.18), rgba(248,164,190,0.25))',
     },
     {
       icon: '🌟',
       badge: 'DREAM 02',
-      title: 'Always Support Your Dreams',
-      text: 'Selalu ada di samping Rian untuk mendukung setiap impian, karir, dan passion yang kamu suka. I will always be your biggest supporter.',
+      title: 'Endless Support From Afar',
+      text: 'Meskipun jauh, aku bakal selalu ada buat dengerin cerita kamu, dukung setiap langkah, impian, dan karir Hewit. You will never walk alone.',
       gradient: 'linear-gradient(135deg, rgba(200,59,100,0.15), rgba(255,232,238,0.3))',
     },
     {
-      icon: '✈️',
+      icon: '📸',
       badge: 'DREAM 03',
-      title: 'New Adventures & Memories',
-      text: 'Creating endless sweet memories together, bisa jalan-jalan ke tempat impian kita, dan bikin momen-momen seru baru.',
+      title: 'Creating Real Memories',
+      text: 'Bikin momen-momen manis baru di dunia nyata, foto bareng tanpa dipisah sinyal, dan merayakan ultah selanjutnya berdampingan.',
       gradient: 'linear-gradient(135deg, rgba(212,163,89,0.15), rgba(255,245,248,0.4))',
     },
     {
       icon: '💍',
       badge: 'DREAM 04',
-      title: 'Building A Beautiful Future',
-      text: 'Bisa merawat hubungan ini dengan penuh rasa saling mengerti, percaya, dan kehangatan yang makin kuat setiap harinya.',
+      title: 'Building Our Forever',
+      text: 'Merawat komitmen, kehangatan, dan rasa percaya ini dengan kuat sampai waktu membawa kita pada masa depan yang indah bersama.',
       gradient: 'linear-gradient(135deg, rgba(200,59,100,0.18), rgba(248,164,190,0.3))',
     },
   ];
@@ -292,11 +292,11 @@ function WishesTab() {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
         {[
-          <span>Semoga di usiamu yang ke-27 ini, Rian selalu sehat, selalu merasa tenang, dan makin dilancarkan setiap urusannya. 🤲🏻💖</span>,
-          <span>May your beautiful, genuine smile always bring happiness to everyone around you and brighten up your days! ✨</span>,
-          <span>Semoga semua wishlist, impian, dan hal-hal yang lagi Rian usahakan sekarang bisa terwujud satu per satu dengan indah. 🌸</span>,
-          <span>May our bond grow even warmer, sweeter, and more mature with each passing day. 🥂</span>,
-          <span>Terima kasih sudah jadi sosok yang selalu bikin hari-hariku terasa lebih indah. Happy 27th Birthday, my favorite person! 🎂🎁💝</span>
+          <span>Semoga di usiamu yang ke-19 ini, Hewit selalu diberikan kesehatan, kelancaran rezeki, dan perlindungan di mana pun kamu berada. 🤲🏻💖</span>,
+          <span>May your days be filled with endless joy and peace, and may the distance never fade that sweet, beautiful smile of yours! ✨</span>,
+          <span>Semoga rasa rindu di antara kita selalu jadi penguat ikatan cinta dan kedewasaan hubungan kita setiap harinya. 🌸</span>,
+          <span>May all your dreams, ambitions, and wishes at 19 come true beautifully, one by one. 🥂</span>,
+          <span>Terima kasih udah bertahan dan selalu memperjuangkan hubungan LDR ini bareng aku. Happy 19th Birthday, my love! 🎂🎁💝</span>
         ].map((item, i) => (
           <div key={i} ref={(el) => itemsRef.current.push(el)} style={{
             display: 'flex', gap: 12, alignItems: 'flex-start',
@@ -395,7 +395,7 @@ export default function LoveLetter({ onNext }) {
           }}>Surat Ulang Tahun</h2>
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: 'var(--pink-deep)', fontWeight: 600,
-          }}>Untuk Rian 💖</p>
+          }}>Untuk Hewit 💖</p>
 
           <div style={{
             marginTop: 24, fontSize: '0.75rem', fontWeight: 700,
@@ -421,7 +421,7 @@ export default function LoveLetter({ onNext }) {
             <h1 style={{
               fontFamily: 'var(--font-display)', fontSize: '1.85rem', color: 'var(--pink-deep)',
               lineHeight: 1.15, marginBottom: 4,
-            }}>Happy Birthday, Rian! 🎂✨</h1>
+            }}>Happy Birthday, Hewit! 🎂✨</h1>
             <p style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: 'var(--rose-gold)', fontWeight: 600,
             }}>Surat cinta dan doa terbaik untuk sayangku 🌸</p>

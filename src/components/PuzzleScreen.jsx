@@ -155,7 +155,7 @@ export default function PuzzleScreen({ onComplete }) {
                   <div style={{
                     width: '300%', height: '300%', position: 'absolute', 
                     top: `${-srcRow * 100}%`, left: `${-srcCol * 100}%`,
-                    backgroundImage: 'url(/rian%205.jpeg)', backgroundSize: 'cover',
+                    backgroundImage: 'url(/hewit%209.jpeg)', backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }} />
                 )}
@@ -185,7 +185,7 @@ export default function PuzzleScreen({ onComplete }) {
                 width: '85%', aspectRatio: '1', borderRadius: 16, overflow: 'hidden',
                 boxShadow: '0 12px 32px rgba(212,69,108,0.25)', marginBottom: 16
               }}>
-                <img src="/rian 5.jpeg" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="/hewit 9.jpeg" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <span style={{ 
                 color: 'var(--pink-deep)', fontSize: '0.75rem', fontWeight: 700,

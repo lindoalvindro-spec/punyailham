@@ -113,9 +113,9 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 boxShadow: '0 12px 32px rgba(200,59,100,0.25)',
                 position: 'relative', zIndex: 1
               }}>
-                <img src="/rian 1.jpeg" alt="Rian" style={{
+                <img src="/hewit 15.jpeg" alt="Hewit" style={{
                   width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center'
-                }} onError={(e) => { e.target.src = '/rian 1.jpeg'; }} />
+                }} onError={(e) => { e.target.src = '/hewit 15.jpeg'; }} />
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: 'var(--pink-deep)',
                 lineHeight: 1, margin: 0
               }}>
-                Rian 💖
+                Hewit 💖
               </h1>
             </div>
 
@@ -146,7 +146,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
               fontFamily: 'var(--font-body)', fontSize: '0.86rem', color: 'var(--berry-light)',
               lineHeight: 1.7, marginBottom: 24, fontStyle: 'italic', padding: '0 6px'
             }}>
-              "Happy Birthday, my love! Thank you for bringing so much warmth, laughter, and happiness into my life every single day. Wishing you endless joy, health, and success on your special day!"
+              "Happy Birthday, my love! Walau terpisah jarak, thank you for bringing so much warmth, laughter, and happiness into my life every single day. Wishing you endless joy, health, and success on your special day. Can't wait to see you soon!"
             </p>
 
             {/* Sign Off */}
@@ -155,7 +155,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 With Endless Love & Appreciation
               </p>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: 'var(--pink-deep)' }}>
-                Happy Birthday, Rian! 🎂🌸💖
+                Happy Birthday, Hewit! 🎂🌸💖
               </p>
             </div>
 

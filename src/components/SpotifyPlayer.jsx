@@ -141,7 +141,7 @@ export default function SpotifyPlayer({ autoPlay = false }) {
       {/* Audio Element */}
       <audio
         ref={audioRef}
-        src="/Shape of My Heart_spotdown.org.mp3"
+        src="/Mirrors_spotdown.org.mp3"
         preload="metadata"
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
@@ -179,10 +179,10 @@ export default function SpotifyPlayer({ autoPlay = false }) {
             border: '1.5px solid #1DB954',
           }}>
             <img
-              src="/Shape of my heart Backstreet Boys.jfif"
-              alt="Shape of My Heart"
+              src="/Justin-Timberlake-The-20-20-Experience-2-of-2-Album-image.webp"
+              alt="Mirrors"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              onError={(e) => { e.target.src = '/Shape of my heart Backstreet Boys.jfif'; }}
+              onError={(e) => { e.target.src = '/Justin-Timberlake-The-20-20-Experience-2-of-2-Album-image.webp'; }}
             />
             {playing && (
               <div className="anim-spin" style={{
@@ -200,7 +200,7 @@ export default function SpotifyPlayer({ autoPlay = false }) {
               fontSize: '0.78rem', fontWeight: 700, color: '#ffffff',
               lineHeight: 1.1, whiteSpace: 'nowrap'
             }}>
-              Shape of My Heart
+              Mirrors
             </div>
             <div style={{
               fontSize: '0.66rem', color: '#1DB954', fontWeight: 600,
@@ -273,10 +273,10 @@ export default function SpotifyPlayer({ autoPlay = false }) {
             background: '#282828',
           }}>
             <img
-              src="/Shape of my heart Backstreet Boys.jfif"
-              alt="Shape of My Heart"
+              src="/Justin-Timberlake-The-20-20-Experience-2-of-2-Album-image.webp"
+              alt="Mirrors"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              onError={(e) => { e.target.src = '/Shape of my heart Backstreet Boys.jfif'; }}
+              onError={(e) => { e.target.src = '/Justin-Timberlake-The-20-20-Experience-2-of-2-Album-image.webp'; }}
             />
             {playing && (
               <div style={{
@@ -300,13 +300,13 @@ export default function SpotifyPlayer({ autoPlay = false }) {
                   whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
                   letterSpacing: '-0.2px'
                 }}>
-                  Shape of My Heart
+                  Mirrors
                 </div>
                 <div style={{
                   fontSize: '0.74rem', color: '#b3b3b3', fontWeight: 500,
                   whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', marginTop: 1
                 }}>
-                  Backstreet Boys
+                  Justin Timberlake
                 </div>
               </div>
 

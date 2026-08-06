@@ -4,14 +4,31 @@ import gsap from 'gsap';
 
 export default function MemoryGallery({ onNext }) {
   const [idx, setIdx] = useState(0);
+  const [direction, setDirection] = useState('next');
   const [lightbox, setLightbox] = useState(false);
   const containerRef = useRef(null);
 
   const exhibits = [
-    { src: '/rian 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
-    { src: '/rian 3.jpeg', tag: 'EXHIBIT #02', title: 'Cool & Joyful ✨' },
-    { src: '/rian 4.jpeg', tag: 'EXHIBIT #03', title: 'Warm Smile ☀️' },
-    { src: '/rian 5.jpeg', tag: 'EXHIBIT #04', title: 'Precious Moments 💎' },
+    { src: '/hewit 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
+    { src: '/hewit 2.jpeg', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
+    { src: '/hewit 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
+    { src: '/hewit 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
+    { src: '/hewit 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
+    { src: '/hewit 6.jpeg', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
+    { src: '/hewit 7.jpeg', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
+    { src: '/hewit 8.jpeg', tag: 'EXHIBIT #08', title: 'Bright Vibes ⭐' },
+    { src: '/hewit 9.jpeg', tag: 'EXHIBIT #09', title: 'Unforgettable Day 🌷' },
+    { src: '/hewit 10.jpeg', tag: 'EXHIBIT #10', title: 'Pure Happiness 👑' },
+    { src: '/hewit 11.jpeg', tag: 'EXHIBIT #11', title: 'Special Portrait 💫' },
+    { src: '/hewit 12.jpeg', tag: 'EXHIBIT #12', title: 'Warmest Energy 🌼' },
+    { src: '/hewit 13.jpeg', tag: 'EXHIBIT #13', title: 'Love & Comfort 💕' },
+    { src: '/hewit 14.jpeg', tag: 'EXHIBIT #14', title: 'Lovely Moments 🎀' },
+    { src: '/hewit 15.jpeg', tag: 'EXHIBIT #15', title: 'Sunshine Glow ☀️' },
+    { src: '/hewit 16.jpeg', tag: 'EXHIBIT #16', title: 'Charming Vibe ✨' },
+    { src: '/hewit 17.jpeg', tag: 'EXHIBIT #17', title: 'Sweet Smiles 🌸' },
+    { src: '/hewit 18.jpeg', tag: 'EXHIBIT #18', title: 'Beautiful Day 🌟' },
+    { src: '/hewit 19.jpeg', tag: 'EXHIBIT #19', title: 'Forever Favorite 💎' },
+    { src: '/hewit 20.jpeg', tag: 'EXHIBIT #20', title: 'Golden Hour Memories 🥂' },
   ];
 
   useEffect(() => {
@@ -30,25 +47,40 @@ export default function MemoryGallery({ onNext }) {
     );
   }, []);
 
+  // GSAP Smooth Slide Animation (Kiri -> Kanan & Kanan -> Kiri)
   useEffect(() => {
     const photoEl = document.getElementById('gallery-photo');
+    const tagEl = document.getElementById('gallery-tag-bar');
+    
     if (photoEl) {
-      gsap.fromTo(photoEl,
-        { opacity: 0, scale: 1.08, filter: 'blur(8px)' },
-        { opacity: 1, scale: 1, filter: 'blur(0px)', duration: 1.2, ease: 'power2.out' }
-      );
+      const fromX = direction === 'next' ? 90 : -90;
       
-      gsap.to(photoEl, {
-        scale: 1.04,
-        duration: 4.5,
-        ease: 'none',
-        delay: 1.2
-      });
-    }
-  }, [idx]);
+      const tl = gsap.timeline();
+      tl.fromTo(photoEl,
+        { opacity: 0, x: fromX, scale: 0.96, filter: 'blur(6px)' },
+        { opacity: 1, x: 0, scale: 1, filter: 'blur(0px)', duration: 0.55, ease: 'power2.out' }
+      );
 
+      if (tagEl) {
+        tl.fromTo(tagEl,
+          { opacity: 0, y: -6 },
+          { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' },
+          '-=0.35'
+        );
+      }
+    }
+
+    // Smoothly scroll active thumbnail into view
+    const activeThumb = document.getElementById(`thumb-${idx}`);
+    if (activeThumb) {
+      activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  }, [idx, direction]);
+
+  // Auto-play timer
   useEffect(() => {
     const timer = setInterval(() => {
+      setDirection('next');
       setIdx((prev) => (prev + 1) % exhibits.length);
     }, 5000);
     return () => clearInterval(timer);
@@ -56,8 +88,21 @@ export default function MemoryGallery({ onNext }) {
 
   const current = exhibits[idx];
 
-  const prevSlide = () => setIdx((prev) => (prev === 0 ? exhibits.length - 1 : prev - 1));
-  const nextSlide = () => setIdx((prev) => (prev + 1) % exhibits.length);
+  const prevSlide = () => {
+    setDirection('prev');
+    setIdx((prev) => (prev === 0 ? exhibits.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setDirection('next');
+    setIdx((prev) => (prev + 1) % exhibits.length);
+  };
+
+  const selectThumbnail = (i) => {
+    if (i === idx) return;
+    setDirection(i > idx ? 'next' : 'prev');
+    setIdx(i);
+  };
 
   return (
     <div className="stage stage--scroll" ref={containerRef}>
@@ -84,7 +129,7 @@ export default function MemoryGallery({ onNext }) {
           fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: 'var(--pink-deep)',
           lineHeight: 1.15, marginBottom: 6, letterSpacing: '-0.5px'
         }}>
-          Rian’s Photo Gallery 🌸
+          Hewit’s Photo Gallery 🌸
         </h1>
       </div>
 
@@ -97,7 +142,7 @@ export default function MemoryGallery({ onNext }) {
         position: 'relative',
       }}>
         {/* Top Tag Bar */}
-        <div style={{
+        <div id="gallery-tag-bar" style={{
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           marginBottom: 12, padding: '0 4px'
         }}>
@@ -130,7 +175,7 @@ export default function MemoryGallery({ onNext }) {
               width: '100%', height: '100%', objectFit: 'cover',
               transformOrigin: 'center center'
             }}
-            onError={(e) => { e.target.src = '/rian 1.jpeg'; }}
+            onError={(e) => { e.target.src = '/hewit 1.jpeg'; }}
           />
 
           {/* Lightbox Inspect Trigger */}
@@ -180,13 +225,15 @@ export default function MemoryGallery({ onNext }) {
 
       {/* Thumbnail Strip */}
       <div className="gallery-controls" style={{
-        display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 28,
-        maxWidth: 370, overflowX: 'auto', padding: '4px 0'
+        display: 'flex', gap: 8, justifyContent: 'flex-start', marginBottom: 28,
+        maxWidth: 370, width: '100%', overflowX: 'auto', padding: '6px 4px',
+        scrollbarWidth: 'thin'
       }}>
         {exhibits.map((item, i) => (
           <div
             key={i}
-            onClick={() => setIdx(i)}
+            id={`thumb-${i}`}
+            onClick={() => selectThumbnail(i)}
             style={{
               width: i === idx ? 48 : 36, height: 48, borderRadius: 10, overflow: 'hidden',
               border: i === idx ? '2px solid var(--pink-deep)' : '1.5px solid transparent',
