@@ -53,7 +53,7 @@ export default function PuzzleScreen({ onComplete }) {
 
   const win = () => {
     setSolved(true);
-    confetti({ particleCount: 150, spread: 90, origin: { y: 0.6 }, colors: ['#c83b64', '#e85d88', '#f497b5', '#d4a359', '#ffffff'] });
+    confetti({ particleCount: 150, spread: 90, origin: { y: 0.6 }, colors: ['#3b82f6', '#7a9a60', '#93c5fd', '#a3c985', '#ffffff'] });
     gsap.fromTo(gridRef.current, 
       { scale: 1 }, 
       { scale: 1.05, duration: 0.4, yoyo: true, repeat: 1, ease: 'power2.out' }
@@ -69,20 +69,20 @@ export default function PuzzleScreen({ onComplete }) {
     <div className="stage">
       <div ref={cardRef} style={{
         width: '100%', maxWidth: '380px', padding: '30px 24px', opacity: 0,
-        background: 'linear-gradient(145deg, rgba(255,255,255,0.96), rgba(255,245,248,0.85))',
+        background: 'linear-gradient(145deg, rgba(255,255,255,0.96), rgba(240,249,255,0.88))',
         backdropFilter: 'blur(20px)', borderRadius: 32,
-        boxShadow: '0 20px 60px rgba(45,16,30,0.15), inset 0 0 0 1px rgba(255,255,255,0.6)',
+        boxShadow: '0 20px 60px rgba(15,23,42,0.12), inset 0 0 0 1px rgba(255,255,255,0.6)',
       }}>
         
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: 22 }}>
           <div style={{ 
             display: 'inline-flex', alignItems: 'center', gap: 6,
-            padding: '4px 14px', borderRadius: 20, background: 'rgba(212,163,89,0.12)',
-            color: 'var(--gold-accent)', fontSize: '0.7rem', fontWeight: 700, letterSpacing: 1,
+            padding: '4px 14px', borderRadius: 20, background: 'rgba(122,154,96,0.15)',
+            color: '#4a6b34', fontSize: '0.7rem', fontWeight: 700, letterSpacing: 1,
             textTransform: 'uppercase', marginBottom: 10
           }}>
-            <Puzzle size={12} /> Exhibition Vault
+            <Puzzle size={12} /> Matcha Exhibition Vault 🍵
           </div>
           <h2 style={{
             fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--berry)', 
@@ -91,10 +91,10 @@ export default function PuzzleScreen({ onComplete }) {
             Puzzle Kenangan
           </h2>
           <p style={{ 
-            fontFamily: 'var(--font-cute)', fontSize: '0.85rem', color: 'var(--pink-deep)', 
+            fontFamily: 'var(--font-cute)', fontSize: '0.85rem', color: '#2563eb', 
             fontWeight: 600, opacity: 0.9
           }}>
-            Susun foto untuk membuka ruang pameran utama ✨
+            Susun foto untuk membuka ruang pameran utama 🍵✨
           </p>
         </div>
 

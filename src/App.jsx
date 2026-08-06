@@ -10,12 +10,12 @@ import MemoryGallery from './components/MemoryGallery';
 import BirthdayWishCard from './components/BirthdayWishCard';
 import SpotifyPlayer from './components/SpotifyPlayer';
 
-const HEART_EMOJIS = ['💕', '💗', '💖', '♡', '✿', '🌸', '⋆'];
+const MATCHA_BLUE_EMOJIS = ['🍵', '🌿', '🍃', '💙', '✨', '🍵', '🌱', '🧋', '☘️'];
 
 function FloatingHearts() {
   const hearts = Array.from({ length: 14 }, (_, i) => ({
     id: i,
-    emoji: HEART_EMOJIS[i % HEART_EMOJIS.length],
+    emoji: MATCHA_BLUE_EMOJIS[i % MATCHA_BLUE_EMOJIS.length],
     left: `${5 + Math.random() * 90}%`,
     dur: `${7 + Math.random() * 6}s`,
     delay: `${Math.random() * 8}s`,

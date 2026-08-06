@@ -63,7 +63,7 @@ export default function FlowerScreen({ onRestart }) {
     });
   }, []);
 
-  const petalEmojis = ['🌸', '🌺', '🌷', '🌸', '✨', '💖', '🌸'];
+  const petalEmojis = ['🍵', '🍃', '🌿', '💙', '✨', '🍵', '🌱'];
 
   return (
     <div className="stage" ref={containerRef} style={{ position: 'relative', overflow: 'hidden', padding: '20px 14px' }}>
@@ -183,51 +183,51 @@ export default function FlowerScreen({ onRestart }) {
               <div style={{
                 fontSize: '1.1rem',
                 fontFamily: 'var(--font-display)',
-                color: 'var(--rose-gold)',
+                color: '#4a6b34',
                 fontStyle: 'italic',
                 lineHeight: 1.1,
               }}>
-                Flowers for my
+                Matcha & Flowers for my
               </div>
               <h2 style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: landscapeMode ? '2.1rem' : '2.4rem',
-                color: 'var(--pink-deep)',
+                color: '#1e40af',
                 lineHeight: 1.05,
                 margin: '2px 0 0 0',
                 letterSpacing: '-0.5px',
-                textShadow: '0 2px 10px rgba(212, 69, 108, 0.2)',
+                textShadow: '0 2px 10px rgba(59, 130, 246, 0.2)',
               }}>
-                Favorite Person 🌸✨
+                Favorite Person 🍵💙
               </h2>
             </div>
 
             {/* Letter Content Card */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.85)',
+              background: 'rgba(255, 255, 255, 0.88)',
               borderRadius: 18,
               padding: '14px 16px',
-              border: '1px solid rgba(212, 163, 89, 0.25)',
-              boxShadow: '0 4px 16px rgba(45, 16, 30, 0.05)',
+              border: '1px solid rgba(122, 154, 96, 0.3)',
+              boxShadow: '0 4px 16px rgba(15, 23, 42, 0.06)',
               lineHeight: 1.7,
               fontSize: '0.84rem',
               color: 'var(--berry)',
               textAlign: 'left',
             }}>
               <p style={{ marginBottom: 12, fontWeight: 500 }}>
-                Selamat ulang tahun ya, Mas. Semoga di umur yang baru, Mas selalu dikelilingi orang-orang yang benar-benar menyayangi Mas. Terima kasih sudah menjadi seseorang yang berhasil membuat Za melihat dunia dengan perasaan yang berbeda. 🌸✨
+                Selamat ulang tahun ya, Mas. Semoga di umur yang baru, Mas selalu dikelilingi orang-orang yang benar-benar menyayangi Mas. Terima kasih sudah menjadi seseorang yang berhasil membuat Za melihat dunia dengan perasaan yang berbeda. 🍵✨
               </p>
               
               <div style={{
-                borderTop: '1px dashed rgba(212, 163, 89, 0.35)',
+                borderTop: '1px dashed rgba(122, 154, 96, 0.35)',
                 paddingTop: 10,
                 marginTop: 10,
                 fontFamily: 'var(--font-display)',
                 fontSize: '1.15rem',
-                color: 'var(--pink-deep)',
+                color: '#1e40af',
                 lineHeight: 1.35,
               }}>
-                Sekali lagi, selamat ulang tahun ya, Mas. 💕🥂✨
+                Sekali lagi, selamat ulang tahun ya, Mas. 🍵💙✨
               </div>
             </div>
 

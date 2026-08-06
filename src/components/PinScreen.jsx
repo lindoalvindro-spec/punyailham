@@ -71,9 +71,9 @@ export default function PinScreen({ onUnlock }) {
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18 }}>
           <div ref={lockRef} style={{
             width: 62, height: 62, borderRadius: '50%',
-            background: 'linear-gradient(145deg, var(--gold-accent), var(--pink-deep))',
+            background: 'linear-gradient(145deg, #7a9a60, #3b82f6)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 8px 28px var(--gold-shadow)', color: '#fff',
+            boxShadow: '0 8px 28px rgba(59, 130, 246, 0.3)', color: '#fff',
           }}>
             <Lock size={26} strokeWidth={2.3} />
           </div>
@@ -84,13 +84,13 @@ export default function PinScreen({ onUnlock }) {
           fontFamily: 'var(--font-display)', fontSize: '1.75rem', color: 'var(--berry)',
           textAlign: 'center', lineHeight: 1.2, marginBottom: 4,
         }}>
-          VIP Pass Verification ✨
+          VIP Pass Verification 🍵✨
         </h1>
         <p style={{
-          fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: 'var(--pink-deep)',
+          fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: '#2563eb',
           textAlign: 'center', fontWeight: 600, marginBottom: 22, opacity: 0.9,
         }}>
-          Masukkan PIN rahasia Wildan 💕
+          Masukkan PIN rahasia Wildan 🍵💙
         </p>
 
         {/* PIN Dots */}
@@ -102,13 +102,13 @@ export default function PinScreen({ onUnlock }) {
                 width: 38, height: 38, borderRadius: 12,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 background: filled
-                  ? 'linear-gradient(135deg, var(--gold-accent), var(--pink-deep))'
-                  : 'rgba(255,255,255,0.7)',
-                border: filled ? 'none' : '2px dashed var(--pink-soft)',
-                boxShadow: filled ? '0 4px 16px var(--gold-shadow)' : 'none',
+                  ? 'linear-gradient(135deg, #7a9a60, #3b82f6)'
+                  : 'rgba(255,255,255,0.85)',
+                border: filled ? 'none' : '2px dashed #93c5fd',
+                boxShadow: filled ? '0 4px 16px rgba(59, 130, 246, 0.3)' : 'none',
                 transition: 'all 0.2s ease',
               }}>
-                {filled && <Sparkles size={18} color="#fff" />}
+                {filled && <span style={{ fontSize: '0.9rem' }}>🍃</span>}
               </div>
             );
           })}

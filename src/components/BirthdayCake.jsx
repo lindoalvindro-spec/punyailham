@@ -140,11 +140,11 @@ export default function BirthdayCake({ onShowGallery }) {
   };
 
   const bgParticles = [
-    { emoji: '✨', top: '10%', left: '8%', size: '1.2rem' },
-    { emoji: '🌸', top: '18%', right: '10%', size: '1rem' },
+    { emoji: '🍵', top: '10%', left: '8%', size: '1.2rem' },
+    { emoji: '🍃', top: '18%', right: '10%', size: '1rem' },
     { emoji: '⭐', top: '40%', left: '5%', size: '0.9rem' },
-    { emoji: '💫', top: '55%', right: '6%', size: '1.1rem' },
-    { emoji: '💖', bottom: '25%', left: '10%', size: '1rem' },
+    { emoji: '💙', top: '55%', right: '6%', size: '1.1rem' },
+    { emoji: '🌿', bottom: '25%', left: '10%', size: '1rem' },
     { emoji: '👑', bottom: '20%', right: '12%', size: '1.2rem' },
   ];
 
@@ -158,7 +158,7 @@ export default function BirthdayCake({ onShowGallery }) {
             position: 'absolute',
             top: p.top, left: p.left, right: p.right, bottom: p.bottom,
             fontSize: p.size, pointerEvents: 'none', zIndex: 0, opacity: 0.65,
-            filter: 'drop-shadow(0 0 8px rgba(212,163,89,0.4))'
+            filter: 'drop-shadow(0 0 8px rgba(122,154,96,0.4))'
           }}
         >
           {p.emoji}
@@ -167,23 +167,23 @@ export default function BirthdayCake({ onShowGallery }) {
 
       <div ref={cardRef} className="glass" style={{
         width: '100%', maxWidth: '370px', padding: '28px 22px', textAlign: 'center', opacity: 0,
-        background: 'linear-gradient(170deg, #ffffff 0%, #fff4f7 50%, #ffeaf1 100%)',
+        background: 'linear-gradient(170deg, #ffffff 0%, #f0f9ff 50%, #ecf8e5 100%)',
         border: '1.5px solid var(--glass-border)',
-        boxShadow: '0 20px 50px rgba(45,16,30,0.18), inset 0 0 30px rgba(255,255,255,0.8)',
+        boxShadow: '0 20px 50px rgba(15,23,42,0.14), inset 0 0 30px rgba(255,255,255,0.8)',
         borderRadius: 28, position: 'relative', zIndex: 1,
       }}>
         {/* Header Title */}
         <div style={{ marginBottom: 20 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-            <Sparkles size={18} color="var(--gold-accent)" />
+            <Sparkles size={18} color="#7a9a60" />
             <h2 style={{
               fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--berry)',
               lineHeight: 1.15, marginBottom: 4
-            }}>Make a Wish, Sayang! ✨</h2>
-            <Sparkles size={18} color="var(--gold-accent)" />
+            }}>Make a Wish, Sayang! 🍵✨</h2>
+            <Sparkles size={18} color="#3b82f6" />
           </div>
           <p style={{
-            fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: 'var(--pink-deep)',
+            fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#2563eb',
             fontWeight: 600, margin: 0, opacity: 0.9, transition: 'all 0.3s ease'
           }}>
             {lit ? 'Ketuk kue/lilin untuk memadamkannya 🕯️' : '✨ Wish kamu terkirim indah ke langit! 🎉'}
@@ -234,25 +234,25 @@ export default function BirthdayCake({ onShowGallery }) {
                 {/* Candle Stick */}
                 <div style={{
                   width: 9, height: 36, borderRadius: '6px 6px 3px 3px',
-                  background: `linear-gradient(180deg, ${['#d4a359', '#e85d88', '#c83b64'][i]} 0%, #ffffff 100%)`,
+                  background: `linear-gradient(180deg, ${['#3b82f6', '#7a9a60', '#60a5fa'][i]} 0%, #ffffff 100%)`,
                   border: '1px solid rgba(255,255,255,0.8)',
-                  boxShadow: '0 3px 6px rgba(45,16,30,0.18)',
+                  boxShadow: '0 3px 6px rgba(15,23,42,0.18)',
                 }} />
               </div>
             ))}
           </div>
 
-          {/* Top Tier (Strawberry Frosting Tier) */}
+          {/* Top Tier (Matcha Cream Tier) */}
           <div style={{
             position: 'absolute', top: 62, left: '50%', transform: 'translateX(-50%)',
             width: 160, height: 50, borderRadius: '18px 18px 12px 12px',
-            background: 'linear-gradient(180deg, #f48fb1 0%, #c2185b 100%)',
-            boxShadow: 'inset 0 4px 10px rgba(255,255,255,0.6), 0 6px 16px rgba(45,16,30,0.15)',
+            background: 'linear-gradient(180deg, #a3c985 0%, #4a6b34 100%)',
+            boxShadow: 'inset 0 4px 10px rgba(255,255,255,0.6), 0 6px 16px rgba(15,23,42,0.15)',
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, zIndex: 4,
           }}>
-            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍓</span>
-            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍓</span>
-            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍓</span>
+            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍵</span>
+            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍃</span>
+            <span style={{ fontSize: '1rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))' }}>🍵</span>
           </div>
 
           {/* Elegant Cream Drips */}
@@ -263,32 +263,32 @@ export default function BirthdayCake({ onShowGallery }) {
             {[10, 14, 9, 13, 11, 15, 10].map((h, i) => (
               <div key={i} style={{
                 width: 12, height: h, borderRadius: '0 0 6px 6px',
-                background: 'linear-gradient(180deg, #ffffff 0%, #fff4f7 100%)',
-                boxShadow: '0 2px 4px rgba(45,16,30,0.1)',
+                background: 'linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%)',
+                boxShadow: '0 2px 4px rgba(15,23,42,0.1)',
               }} />
             ))}
           </div>
 
-          {/* Bottom Tier (Vanilla Cream & Name Badge Tier) */}
+          {/* Bottom Tier (Ocean & Matcha Cream Tier) */}
           <div style={{
             position: 'absolute', top: 110, left: '50%', transform: 'translateX(-50%)',
             width: 216, height: 72, borderRadius: '22px',
-            background: 'linear-gradient(180deg, #ffffff 0%, #fff2f5 60%, #ffe4ea 100%)',
-            border: '1.5px solid rgba(212,163,89,0.35)',
-            boxShadow: '0 10px 28px rgba(45,16,30,0.12), inset 0 3px 8px rgba(255,255,255,0.9)',
+            background: 'linear-gradient(180deg, #ffffff 0%, #eff6ff 60%, #e0f2fe 100%)',
+            border: '1.5px solid rgba(122,154,96,0.35)',
+            boxShadow: '0 10px 28px rgba(15,23,42,0.12), inset 0 3px 8px rgba(255,255,255,0.9)',
             display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 3,
             paddingTop: 8,
           }}>
             <div style={{
-              background: 'linear-gradient(135deg, rgba(212,163,89,0.12), rgba(248,164,190,0.2))',
-              padding: '6px 18px', borderRadius: 20, border: '1px dashed rgba(212,163,89,0.4)',
+              background: 'linear-gradient(135deg, rgba(96,165,250,0.15), rgba(163,201,133,0.25))',
+              padding: '6px 18px', borderRadius: 20, border: '1px dashed rgba(122,154,96,0.4)',
               display: 'inline-flex', alignItems: 'center', gap: 6,
             }}>
               <span style={{
-                fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: 'var(--pink-deep)',
+                fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#1e40af',
                 fontWeight: 700, letterSpacing: '0.5px', margin: 0, lineHeight: 1.1
               }}>
-                Happy Birthday Sayang! 🎂🌸
+                Happy Birthday Wildan! 🍵💙
               </span>
             </div>
           </div>

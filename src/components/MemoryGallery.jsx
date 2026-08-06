@@ -104,19 +104,19 @@ export default function MemoryGallery({ onNext }) {
       <div className="gallery-header" style={{ textAlign: 'center', marginBottom: 24, width: '100%', maxWidth: 390, position: 'relative', zIndex: 2 }}>
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 6,
-          padding: '5px 14px', borderRadius: 20, background: 'rgba(212,163,89,0.12)',
-          border: '1px solid rgba(212,163,89,0.3)', marginBottom: 10
+          padding: '5px 14px', borderRadius: 20, background: 'rgba(122,154,96,0.15)',
+          border: '1px solid rgba(122,154,96,0.35)', marginBottom: 10
         }}>
-          <Sparkles size={13} color="var(--gold-accent)" />
-          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--gold-accent)', letterSpacing: 1.5, textTransform: 'uppercase' }}>
-            The Love Exhibition
+          <Sparkles size={13} color="#4a6b34" />
+          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#4a6b34', letterSpacing: 1.5, textTransform: 'uppercase' }}>
+            The Matcha & Love Exhibition 🍵
           </span>
         </div>
         <h1 style={{
-          fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: 'var(--pink-deep)',
+          fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: '#1e40af',
           lineHeight: 1.15, marginBottom: 6, letterSpacing: '-0.5px'
         }}>
-          Wildan’s Photo Gallery 🌸
+          Wildan’s Photo Gallery 🍵💙
         </h1>
       </div>
 
@@ -124,8 +124,8 @@ export default function MemoryGallery({ onNext }) {
       <div className="gallery-frame" style={{
         width: '100%', maxWidth: 370, padding: 16, marginBottom: 24,
         background: '#ffffff', borderRadius: 28,
-        border: '1.5px solid rgba(212,163,89,0.25)',
-        boxShadow: '0 20px 50px rgba(45,16,30,0.15), 0 2px 10px rgba(212,163,89,0.08)',
+        border: '1.5px solid rgba(96,165,250,0.3)',
+        boxShadow: '0 20px 50px rgba(15,23,42,0.12), 0 2px 10px rgba(122,154,96,0.1)',
         position: 'relative',
       }}>
         {/* Top Tag Bar */}

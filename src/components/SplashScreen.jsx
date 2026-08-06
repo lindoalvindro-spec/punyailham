@@ -116,14 +116,14 @@ export default function SplashScreen({ onStart }) {
   };
 
   const sparkleData = [
-    { emoji: '✨', top: '8%', left: '7%', size: '1.3rem' },
-    { emoji: '🌟', top: '14%', right: '8%', size: '1.2rem' },
+    { emoji: '🍵', top: '8%', left: '7%', size: '1.3rem' },
+    { emoji: '🍃', top: '14%', right: '8%', size: '1.2rem' },
     { emoji: '🎉', top: '26%', left: '5%', size: '1.2rem' },
-    { emoji: '⭐', top: '24%', right: '6%', size: '1.1rem' },
-    { emoji: '🌸', bottom: '20%', left: '8%', size: '1.2rem' },
+    { emoji: '💙', top: '24%', right: '6%', size: '1.1rem' },
+    { emoji: '🌿', bottom: '20%', left: '8%', size: '1.2rem' },
     { emoji: '💫', bottom: '18%', right: '7%', size: '1.2rem' },
-    { emoji: '💖', top: '42%', left: '4%', size: '1rem' },
-    { emoji: '🌸', top: '38%', right: '4%', size: '1.2rem' },
+    { emoji: '🍵', top: '42%', left: '4%', size: '1rem' },
+    { emoji: '✨', top: '38%', right: '4%', size: '1.2rem' },
   ];
 
   return (
@@ -147,7 +147,7 @@ export default function SplashScreen({ onStart }) {
       {/* Luxury Dark Gradient Overlay for Maximum Readability */}
       <div ref={overlayRef} style={{
         position: 'absolute', inset: 0, opacity: 0,
-        background: 'radial-gradient(circle at center, rgba(45, 16, 30, 0.6) 0%, rgba(20, 7, 13, 0.9) 70%, rgba(10, 3, 6, 0.98) 100%)',
+        background: 'radial-gradient(circle at center, rgba(15, 23, 42, 0.65) 0%, rgba(10, 15, 30, 0.9) 70%, rgba(5, 10, 20, 0.98) 100%)',
       }} />
 
       {/* Lucu Characters */}
@@ -169,7 +169,7 @@ export default function SplashScreen({ onStart }) {
             position: 'absolute', fontSize: s.size, opacity: 0,
             top: s.top, left: s.left, right: s.right, bottom: s.bottom,
             pointerEvents: 'none', zIndex: 2,
-            filter: 'drop-shadow(0 0 8px rgba(212,163,89,0.7))',
+            filter: 'drop-shadow(0 0 8px rgba(122,154,96,0.7))',
           }}
         >{s.emoji}</span>
       ))}
@@ -185,7 +185,7 @@ export default function SplashScreen({ onStart }) {
           <div className="sparkling-20-badge">
             <span className="sparkle-icon-left">✨</span>
             <span className="sparkling-20-text">100</span>
-            <span className="sparkle-icon-right">💖</span>
+            <span className="sparkle-icon-right">🍵</span>
           </div>
         </div>
 
@@ -193,21 +193,21 @@ export default function SplashScreen({ onStart }) {
         <div ref={badgeRef} style={{
           display: 'inline-flex', alignItems: 'center', gap: 6,
           padding: '6px 16px', borderRadius: 30, marginBottom: 12,
-          background: 'rgba(212, 163, 89, 0.2)', backdropFilter: 'blur(12px)',
-          border: '1px solid rgba(255, 215, 0, 0.5)',
+          background: 'rgba(59, 130, 246, 0.25)', backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(163, 201, 133, 0.6)',
           boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
           opacity: 0,
         }}>
           <Crown size={14} color="var(--gold-accent)" />
           <span className="sparkling-birthday-text">
-            Happy 100th Birthday!
+            Happy 100th Birthday! 🍵✨
           </span>
         </div>
 
         {/* Subtitle */}
         <p ref={line1Ref} style={{
           fontFamily: 'var(--font-cute)', fontSize: '0.78rem', fontWeight: 600,
-          color: 'rgba(255,244,247,0.9)', letterSpacing: '1.8px', textTransform: 'uppercase',
+          color: 'rgba(224,242,254,0.9)', letterSpacing: '1.8px', textTransform: 'uppercase',
           marginBottom: 4, opacity: 0,
         }}>
           Special Exhibition Dedicated To
@@ -217,7 +217,7 @@ export default function SplashScreen({ onStart }) {
         <h1 ref={line2Ref} style={{
           fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#fff',
           lineHeight: 1.15, marginBottom: 10, opacity: 0,
-          textShadow: '0 4px 20px rgba(212, 69, 108, 0.7), 0 0 35px rgba(212, 163, 89, 0.5)',
+          textShadow: '0 4px 20px rgba(59, 130, 246, 0.7), 0 0 35px rgba(122, 154, 96, 0.5)',
         }}>
           Wildan
         </h1>
@@ -227,19 +227,19 @@ export default function SplashScreen({ onStart }) {
           <div className="birthday-greeting-box">
             <p style={{
               fontFamily: 'var(--font-display)', fontSize: '1.25rem',
-              color: '#ffe082', margin: 0, lineHeight: 1.3,
+              color: '#dcfce7', margin: 0, lineHeight: 1.3,
               textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             }}>
-              "Selamat Ulang Tahun Ke-100, Orang Terfavoritku!"
+              "Selamat Ulang Tahun Ke-100, Orang Terfavoritku!" 🍵💙
             </p>
           </div>
 
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.78rem',
-            color: 'var(--gold-light)', fontWeight: 600, marginBottom: 20,
+            color: '#bfdbfe', fontWeight: 600, marginBottom: 20,
             letterSpacing: '0.5px'
           }}>
-            The Museum of Love & Beautiful Memories ✨
+            The Museum of Matcha, Love & Memories 🍃✨
           </p>
         </div>
 
@@ -249,10 +249,10 @@ export default function SplashScreen({ onStart }) {
           onClick={handleStart}
           style={{
             opacity: 0, padding: '14px 32px', borderRadius: 60, border: 'none',
-            background: 'linear-gradient(135deg, #ffd700 0%, var(--pink-deep) 100%)',
+            background: 'linear-gradient(135deg, #3b82f6 0%, #7a9a60 100%)',
             color: '#fff', fontFamily: 'var(--font-cute)', fontSize: '0.92rem',
             fontWeight: 700, cursor: 'pointer', letterSpacing: '0.5px',
-            boxShadow: '0 8px 28px rgba(212, 69, 108, 0.5), 0 0 18px rgba(255, 215, 0, 0.4)',
+            boxShadow: '0 8px 28px rgba(59, 130, 246, 0.4), 0 0 18px rgba(122, 154, 96, 0.4)',
             transition: 'transform 0.2s ease, box-shadow 0.2s ease',
             display: 'inline-flex', alignItems: 'center', gap: 8,
           }}
@@ -260,7 +260,7 @@ export default function SplashScreen({ onStart }) {
           onPointerUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
           onPointerLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
         >
-          Masuk Pameran Ulang Tahun 💖
+          Masuk Pameran Ulang Tahun 🍵💙
         </button>
 
       </div>

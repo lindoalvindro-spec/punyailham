@@ -61,9 +61,9 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
         }}>
           {/* Inner Invitation Border */}
           <div style={{
-            border: '1px solid rgba(212,163,89,0.3)', borderRadius: 20,
+            border: '1px solid rgba(122,154,96,0.3)', borderRadius: 20,
             padding: '36px 22px', textAlign: 'center', position: 'relative', overflow: 'hidden',
-            background: 'radial-gradient(circle at top, #fffdfa 0%, #fff5f8 100%)'
+            background: 'radial-gradient(circle at top, #ffffff 0%, #f0f9ff 50%, #ecf8e5 100%)'
           }}>
 
             {/* Cute Cat Decor Sticker (Top Left Corner) */}
@@ -77,16 +77,16 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
             <img src="/gambar 13 no bg 1.png" alt="Hearts" className="reveal-el" style={{
               position: 'absolute', top: 10, right: 10, width: 75,
               opacity: 0.9, pointerEvents: 'none', zIndex: 10,
-              filter: 'drop-shadow(0 4px 8px rgba(212,69,108,0.2))'
+              filter: 'drop-shadow(0 4px 8px rgba(59,130,246,0.2))'
             }} onError={(e) => e.target.style.display = 'none'} />
 
             {/* Top Crown & Sparkles Decoration */}
             <div className="reveal-el" style={{ marginBottom: 14, display: 'flex', justifyContent: 'center' }}>
               <div style={{
-                width: 44, height: 44, borderRadius: '50%', background: 'rgba(212,163,89,0.12)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(212,163,89,0.3)'
+                width: 44, height: 44, borderRadius: '50%', background: 'rgba(122,154,96,0.15)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(122,154,96,0.3)'
               }}>
-                <Crown size={22} color="var(--gold-accent)" />
+                <Crown size={22} color="#4a6b34" />
               </div>
             </div>
 
@@ -97,20 +97,20 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
               {/* Left Butterflies Cluster */}
               <img src="/gambar 12 no bg.png" alt="Left Butterflies" className="float-el" style={{
                 position: 'absolute', top: 25, left: -35, width: 60,
-                zIndex: 5, pointerEvents: 'none', filter: 'drop-shadow(0 4px 10px rgba(212,69,108,0.3))'
+                zIndex: 5, pointerEvents: 'none', filter: 'drop-shadow(0 4px 10px rgba(59,130,246,0.3))'
               }} onError={(e) => e.target.style.display = 'none'} />
 
               {/* Right Butterflies Cluster */}
               <img src="/gambar 12 no bg.png" alt="Right Butterflies" className="float-el" style={{
                 position: 'absolute', top: 80, right: -45, width: 55,
                 zIndex: 5, pointerEvents: 'none', transform: 'scaleX(-1)',
-                filter: 'drop-shadow(0 4px 10px rgba(212,69,108,0.3))'
+                filter: 'drop-shadow(0 4px 10px rgba(59,130,246,0.3))'
               }} onError={(e) => e.target.style.display = 'none'} />
 
               <div style={{
                 width: 150, height: 150, borderRadius: '50%',
                 overflow: 'hidden', border: '4px solid #fff',
-                boxShadow: '0 12px 32px rgba(200,59,100,0.25)',
+                boxShadow: '0 12px 32px rgba(59,130,246,0.25)',
                 position: 'relative', zIndex: 1
               }}>
                 <img src="/wildan 1.jpeg" alt="Wildan" style={{
@@ -121,24 +121,24 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
 
             {/* Typography */}
             <h3 className="reveal-el" style={{
-              fontFamily: 'var(--font-cute)', fontSize: '0.8rem', color: 'var(--rose-gold)',
+              fontFamily: 'var(--font-cute)', fontSize: '0.8rem', color: '#4a6b34',
               letterSpacing: 2.5, textTransform: 'uppercase', marginBottom: 4, fontWeight: 700
             }}>
-              Official Birthday Card
+              Official Birthday Card 🍵✨
             </h3>
             
             <div className="reveal-el" style={{ textAlign: 'center', marginBottom: 18 }}>
               <h1 style={{
-                fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: 'var(--pink-deep)',
+                fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#1e40af',
                 lineHeight: 1, margin: 0
               }}>
-                Wildan 💖
+                Wildan 🍵💙
               </h1>
             </div>
 
             {/* Gold Accent Divider */}
             <div className="reveal-el" style={{
-              width: 50, height: 1.5, background: 'var(--gold-accent)', margin: '0 auto 20px', opacity: 0.6
+              width: 50, height: 1.5, background: '#7a9a60', margin: '0 auto 20px', opacity: 0.8
             }} />
 
             {/* Message */}
@@ -151,11 +151,11 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
 
             {/* Sign Off */}
             <div className="reveal-el" style={{ marginBottom: 10 }}>
-              <p style={{ fontSize: '0.72rem', color: 'var(--rose-gold)', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 1.2, fontWeight: 700 }}>
-                With Endless Love & Appreciation — Za 💖
+              <p style={{ fontSize: '0.72rem', color: '#4a6b34', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 1.2, fontWeight: 700 }}>
+                With Endless Love & Appreciation — Za 🍵💙
               </p>
-              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: 'var(--pink-deep)' }}>
-                Happy Birthday, Mas! 🎂🌸💖
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: '#1e40af' }}>
+                Happy Birthday, Mas! 🍵🎂💙
               </p>
             </div>
 

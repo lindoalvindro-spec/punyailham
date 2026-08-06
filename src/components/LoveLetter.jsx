@@ -357,41 +357,41 @@ export default function LoveLetter({ onNext }) {
         <div ref={envelopeRef} onClick={open} className="glass" style={{
           width: '100%', maxWidth: '350px', padding: '42px 24px', textAlign: 'center',
           cursor: 'pointer', opacity: 0, position: 'relative',
-          background: 'linear-gradient(160deg, #fffaf6 0%, #ffeef3 100%)',
+          background: 'linear-gradient(160deg, #f0f9ff 0%, #ecf8e5 100%)',
           border: '1.5px solid var(--glass-border)',
-          boxShadow: '0 16px 48px rgba(45,16,30,0.18)',
+          boxShadow: '0 16px 48px rgba(15,23,42,0.15)',
         }}>
           {/* Stamp */}
           <div style={{
             position: 'absolute', top: 14, right: 14, width: 38, height: 44,
-            border: '2px dashed var(--gold-accent)', borderRadius: 6,
+            border: '2px dashed #7a9a60', borderRadius: 6,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             fontSize: '1.2rem', opacity: 0.85,
-          }}>👑</div>
+          }}>🍵</div>
 
           {/* Wax Seal */}
           <div ref={sealRef} className="anim-breathe" style={{
             width: 70, height: 70, borderRadius: '50%', margin: '0 auto 22px',
-            background: 'radial-gradient(circle at 40% 35%, #d4a359 0%, #9e304f 100%)',
+            background: 'radial-gradient(circle at 40% 35%, #a3c985 0%, #4a6b34 100%)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 6px 24px rgba(200,59,100,0.45), inset 0 -2px 6px rgba(0,0,0,0.2)',
-            border: '3px solid rgba(247,231,196,0.7)',
+            boxShadow: '0 6px 24px rgba(74,107,52,0.45), inset 0 -2px 6px rgba(0,0,0,0.2)',
+            border: '3px solid rgba(220,252,231,0.8)',
           }}>
-            <Heart size={32} fill="#fff" color="#fff" style={{ filter: 'drop-shadow(0 1px 3px rgba(0,0,0,0.2))' }} />
+            <Heart size={30} fill="#fff" color="#fff" style={{ filter: 'drop-shadow(0 1px 3px rgba(0,0,0,0.2))' }} />
           </div>
 
           <h2 style={{
             fontFamily: 'var(--font-display)', fontSize: '1.85rem', color: 'var(--berry)', marginBottom: 6,
           }}>Surat Ulang Tahun</h2>
           <p style={{
-            fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: 'var(--pink-deep)', fontWeight: 600,
-          }}>Untuk Wildan 💖</p>
+            fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#2563eb', fontWeight: 600,
+          }}>Untuk Wildan 🍵💙</p>
 
           <div style={{
             marginTop: 24, fontSize: '0.75rem', fontWeight: 700,
-            background: 'rgba(212,163,89,0.12)', color: 'var(--pink-deep)',
+            background: 'rgba(122,154,96,0.15)', color: '#4a6b34',
             padding: '8px 18px', borderRadius: 20, display: 'inline-block',
-            border: '1.5px solid rgba(212,163,89,0.3)',
+            border: '1.5px solid rgba(122,154,96,0.3)',
           }}>
             👆 Ketuk untuk membuka surat
           </div>
