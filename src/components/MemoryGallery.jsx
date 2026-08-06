@@ -9,26 +9,13 @@ export default function MemoryGallery({ onNext }) {
   const containerRef = useRef(null);
 
   const exhibits = [
-    { src: '/hewit 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
-    { src: '/hewit 2.jpeg', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
-    { src: '/hewit 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
-    { src: '/hewit 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
-    { src: '/hewit 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
-    { src: '/hewit 6.jpeg', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
-    { src: '/hewit 7.jpeg', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
-    { src: '/hewit 8.jpeg', tag: 'EXHIBIT #08', title: 'Bright Vibes ⭐' },
-    { src: '/hewit 9.jpeg', tag: 'EXHIBIT #09', title: 'Unforgettable Day 🌷' },
-    { src: '/hewit 10.jpeg', tag: 'EXHIBIT #10', title: 'Pure Happiness 👑' },
-    { src: '/hewit 11.jpeg', tag: 'EXHIBIT #11', title: 'Special Portrait 💫' },
-    { src: '/hewit 12.jpeg', tag: 'EXHIBIT #12', title: 'Warmest Energy 🌼' },
-    { src: '/hewit 13.jpeg', tag: 'EXHIBIT #13', title: 'Love & Comfort 💕' },
-    { src: '/hewit 14.jpeg', tag: 'EXHIBIT #14', title: 'Lovely Moments 🎀' },
-    { src: '/hewit 15.jpeg', tag: 'EXHIBIT #15', title: 'Sunshine Glow ☀️' },
-    { src: '/hewit 16.jpeg', tag: 'EXHIBIT #16', title: 'Charming Vibe ✨' },
-    { src: '/hewit 17.jpeg', tag: 'EXHIBIT #17', title: 'Sweet Smiles 🌸' },
-    { src: '/hewit 18.jpeg', tag: 'EXHIBIT #18', title: 'Beautiful Day 🌟' },
-    { src: '/hewit 19.jpeg', tag: 'EXHIBIT #19', title: 'Forever Favorite 💎' },
-    { src: '/hewit 20.jpeg', tag: 'EXHIBIT #20', title: 'Golden Hour Memories 🥂' },
+    { src: '/wildan 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
+    { src: '/wildan 2.jpeg', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
+    { src: '/wildan 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
+    { src: '/wildan 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
+    { src: '/wildan 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
+    { src: '/wildan 6.jpeg', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
+    { src: '/wildan 7.jpeg', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
   ];
 
   useEffect(() => {
@@ -129,7 +116,7 @@ export default function MemoryGallery({ onNext }) {
           fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: 'var(--pink-deep)',
           lineHeight: 1.15, marginBottom: 6, letterSpacing: '-0.5px'
         }}>
-          Hewit’s Photo Gallery 🌸
+          Wildan’s Photo Gallery 🌸
         </h1>
       </div>
 
@@ -175,7 +162,7 @@ export default function MemoryGallery({ onNext }) {
               width: '100%', height: '100%', objectFit: 'cover',
               transformOrigin: 'center center'
             }}
-            onError={(e) => { e.target.src = '/hewit 1.jpeg'; }}
+            onError={(e) => { e.target.src = '/wildan 1.jpeg'; }}
           />
 
           {/* Lightbox Inspect Trigger */}

@@ -215,7 +215,7 @@ export default function FlowerScreen({ onRestart }) {
               textAlign: 'left',
             }}>
               <p style={{ marginBottom: 12, fontWeight: 500 }}>
-                Bunga ini dikirimkan khusus dari jauh, and every single petal carries a special wish & hug for you. Thank you for always bringing so much warmth into my days. Semoga di usia ke-19 ini, Hewit makin sukses, bahagia, dan selalu dikelilingi hal-hal baik. Can't wait for the day we finally meet again. Wishing you the happiest 19th Birthday! 🎉✨
+                Selamat ulang tahun ya, Mas. Semoga di umur yang baru, Mas selalu dikelilingi orang-orang yang benar-benar menyayangi Mas. Terima kasih sudah menjadi seseorang yang berhasil membuat Za melihat dunia dengan perasaan yang berbeda. 🌸✨
               </p>
               
               <div style={{
@@ -227,7 +227,7 @@ export default function FlowerScreen({ onRestart }) {
                 color: 'var(--pink-deep)',
                 lineHeight: 1.35,
               }}>
-                Thank you for being such an amazing person and making every day brighter. Cheers to 19! 🥂✨
+                Sekali lagi, selamat ulang tahun ya, Mas. 💕🥂✨
               </div>
             </div>
 
