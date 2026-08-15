@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowRight, Sparkles, Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Sparkles, Maximize2, X, ChevronLeft, ChevronRight, Film } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function MemoryGallery({ onNext }) {
@@ -9,13 +9,13 @@ export default function MemoryGallery({ onNext }) {
   const containerRef = useRef(null);
 
   const exhibits = [
-    { src: '/james 1.jfif', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
-    { src: '/james 2.jfif', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
-    { src: '/james 3.jfif', tag: 'EXHIBIT #03', title: 'Cool & Joyful 🌸' },
-    { src: '/james 4.jfif', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
-    { src: '/james 5.jfif', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
-    { src: '/james 6.jfif', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
-    { src: '/james 7.jfif', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
+    { src: '/ilham 1.jpeg', tag: 'EXHIBIT #01', title: 'Handsome Radiance 🌟' },
+    { src: '/ilham 2.jpeg', tag: 'EXHIBIT #02', title: 'Sweet Smile ✨' },
+    { src: '/ilham 3.jpeg', tag: 'EXHIBIT #03', title: 'Cool & Charming 🌸' },
+    { src: '/ilham 4.jpeg', tag: 'EXHIBIT #04', title: 'Warm Atmosphere ☀️' },
+    { src: '/ilham 5.jpeg', tag: 'EXHIBIT #05', title: 'Precious Moments 💎' },
+    { src: '/ilham 6.jpeg', tag: 'EXHIBIT #06', title: 'Sweet Memories 💖' },
+    { src: '/ilham 7.jpeg', tag: 'EXHIBIT #07', title: 'Favorite View 🌺' },
   ];
 
   useEffect(() => {
@@ -97,7 +97,7 @@ export default function MemoryGallery({ onNext }) {
       <img src="/Untitled - July 29, 2026 at 22.02.49.png" alt="Decoration" style={{
         width: '100%', maxWidth: 280, maxHeight: 140, objectFit: 'contain', 
         marginBottom: 4, marginTop: -20, opacity: 0.95, pointerEvents: 'none',
-        filter: 'drop-shadow(0 4px 12px rgba(212,69,108,0.25))'
+        filter: 'drop-shadow(0 4px 12px rgba(59,130,246,0.25))'
       }} onError={(e) => e.target.style.display = 'none'} />
 
       {/* Museum Title */}
@@ -116,7 +116,7 @@ export default function MemoryGallery({ onNext }) {
           fontFamily: 'var(--font-display)', fontSize: '2.2rem', color: '#1e40af',
           lineHeight: 1.15, marginBottom: 6, letterSpacing: '-0.5px'
         }}>
-          Galeri Foto James 🍵✨
+          Galeri Foto Ilwan 🍵✨
         </h1>
       </div>
 
@@ -162,7 +162,7 @@ export default function MemoryGallery({ onNext }) {
               width: '100%', height: '100%', objectFit: 'cover',
               transformOrigin: 'center center'
             }}
-            onError={(e) => { e.target.src = '/james 1.jfif'; }}
+            onError={(e) => { e.target.src = '/ilham 1.jpeg'; }}
           />
 
           {/* Lightbox Inspect Trigger */}
@@ -171,7 +171,7 @@ export default function MemoryGallery({ onNext }) {
             style={{
               position: 'absolute', top: 12, right: 12, width: 36, height: 36,
               borderRadius: '50%', background: 'rgba(255,255,255,0.85)',
-              backdropFilter: 'blur(8px)', border: 'none', color: 'var(--pink-deep)',
+              backdropFilter: 'blur(8px)', border: 'none', color: '#1e40af',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               cursor: 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
               transition: 'transform 0.15s ease'
@@ -223,10 +223,10 @@ export default function MemoryGallery({ onNext }) {
             onClick={() => selectThumbnail(i)}
             style={{
               width: i === idx ? 48 : 36, height: 48, borderRadius: 10, overflow: 'hidden',
-              border: i === idx ? '2px solid var(--pink-deep)' : '1.5px solid transparent',
+              border: i === idx ? '2px solid #3b82f6' : '1.5px solid transparent',
               opacity: i === idx ? 1 : 0.6,
               transition: 'all 0.3s cubic-bezier(0.25, 1, 0.5, 1)', cursor: 'pointer',
-              flexShrink: 0, boxShadow: i === idx ? '0 4px 12px rgba(200,59,100,0.3)' : 'none',
+              flexShrink: 0, boxShadow: i === idx ? '0 4px 12px rgba(59,130,246,0.3)' : 'none',
             }}
           >
             <img src={item.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -239,7 +239,7 @@ export default function MemoryGallery({ onNext }) {
         <div
           onClick={() => setLightbox(false)}
           style={{
-            position: 'fixed', inset: 0, background: 'rgba(15, 5, 10, 0.92)',
+            position: 'fixed', inset: 0, background: 'rgba(15, 23, 42, 0.94)',
             backdropFilter: 'blur(16px)', zIndex: 9999, display: 'flex',
             alignItems: 'center', justifyContent: 'center', padding: 20, cursor: 'pointer'
           }}
@@ -256,18 +256,18 @@ export default function MemoryGallery({ onNext }) {
             <X size={22} />
           </button>
 
-          <div style={{ maxWidth: '90vw', maxHeight: '85vh', borderRadius: 20, overflow: 'hidden', border: '2px solid var(--gold-accent)', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}>
+          <div style={{ maxWidth: '90vw', maxHeight: '85vh', borderRadius: 20, overflow: 'hidden', border: '2px solid #60a5fa', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}>
             <img src={current.src} alt={current.title} style={{ width: '100%', height: '100%', objectFit: 'contain', maxHeight: '80vh' }} />
-            <div style={{ padding: '12px', background: 'rgba(30,10,20,0.85)', textAlign: 'center', color: 'var(--gold-light)', fontFamily: 'var(--font-display)', fontSize: '1.2rem' }}>
+            <div style={{ padding: '12px', background: 'rgba(15,23,42,0.85)', textAlign: 'center', color: '#dcfce7', fontFamily: 'var(--font-display)', fontSize: '1.2rem' }}>
               {current.tag}: {current.title}
             </div>
           </div>
         </div>
       )}
 
-      {/* Next Button */}
+      {/* Next Button -> to Video */}
       <button className="gallery-controls btn-primary" onClick={onNext} style={{ width: '100%', maxWidth: 370 }}>
-        Lanjutkan ke Kartu Ucapan 🎴 <ArrowRight size={16} />
+        Tonton Video Spesial 🎬 <ArrowRight size={16} />
       </button>
     </div>
   );

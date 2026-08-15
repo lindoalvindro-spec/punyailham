@@ -131,10 +131,10 @@ export default function BirthdayCake({ onShowGallery }) {
         });
       }
 
-      fire(0.25, { spread: 26, startVelocity: 55, colors: ['#d4a359', '#e85d88', '#f497b5'] });
-      fire(0.2, { spread: 60, colors: ['#ffffff', '#f7e7c4', '#c83b64'] });
+      fire(0.25, { spread: 26, startVelocity: 55, colors: ['#3b82f6', '#7a9a60', '#93c5fd'] });
+      fire(0.2, { spread: 60, colors: ['#ffffff', '#ecf8e5', '#1e40af'] });
       fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
-      fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, colors: ['#ffe4e1', '#ffc0cb', '#ffffff'] });
+      fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, colors: ['#dbeafe', '#dcfce7', '#ffffff'] });
       fire(0.1, { spread: 120, startVelocity: 45 });
     }, 450);
   };
@@ -179,7 +179,7 @@ export default function BirthdayCake({ onShowGallery }) {
             <h2 style={{
               fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--berry)',
               lineHeight: 1.15, marginBottom: 4
-            }}>Make a Wish, James 🍵✨</h2>
+            }}>Make a Wish, Ilwan 🍵✨</h2>
             <Sparkles size={18} color="#3b82f6" />
           </div>
           <p style={{
@@ -288,7 +288,7 @@ export default function BirthdayCake({ onShowGallery }) {
                 fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#1e40af',
                 fontWeight: 700, letterSpacing: '0.5px', margin: 0, lineHeight: 1.1
               }}>
-                Happy Birthday James! 🍵💙
+                Happy 18th Birthday Ilwan! 🍵💙
               </span>
             </div>
           </div>
@@ -313,13 +313,13 @@ export default function BirthdayCake({ onShowGallery }) {
         {!lit && (
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: 'linear-gradient(135deg, rgba(212,163,89,0.15), rgba(248,164,190,0.2))',
+            background: 'linear-gradient(135deg, rgba(59,130,246,0.15), rgba(163,201,133,0.2))',
             padding: '8px 18px', borderRadius: 20, marginBottom: 20,
-            border: '1px solid rgba(212,163,89,0.3)',
+            border: '1px solid rgba(96,165,250,0.3)',
           }}>
-            <Sparkles size={15} color="var(--pink-deep)" />
+            <Sparkles size={15} color="#1e40af" />
             <span style={{
-              fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: 'var(--pink-deep)', fontWeight: 700
+              fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: '#1e40af', fontWeight: 700
             }}>
               Lilin telah dipadamkan dengan indah ✨
             </span>

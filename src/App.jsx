@@ -4,13 +4,14 @@ import SplashScreen from './components/SplashScreen';
 import PinScreen from './components/PinScreen';
 import PuzzleScreen from './components/PuzzleScreen';
 import LoveLetter from './components/LoveLetter';
-import FlowerScreen from './components/FlowerScreen';
 import BirthdayCake from './components/BirthdayCake';
 import MemoryGallery from './components/MemoryGallery';
+import VideoScreen from './components/VideoScreen';
 import BirthdayWishCard from './components/BirthdayWishCard';
+import FlowerScreen from './components/FlowerScreen';
 import SpotifyPlayer from './components/SpotifyPlayer';
 
-const MATCHA_BLUE_EMOJIS = ['🍵', '🌿', '🍃', '💙', '✨', '🍵', '🌱', '🧋', '☘️'];
+const MATCHA_BLUE_EMOJIS = ['🍵', '🌿', '🍃', '💙', '✨', '🍵', '🌱', '🤍', '☘️'];
 
 function FloatingHearts() {
   const hearts = Array.from({ length: 14 }, (_, i) => ({
@@ -43,11 +44,15 @@ function FloatingHearts() {
 }
 
 export default function App() {
-  // Flow: splash → pin → puzzle → letter → cake → gallery → wishcard → flower
+  // Flow: splash → pin → puzzle → letter → cake → gallery → video → wishcard → flower
   const [stage, setStage] = useState('splash');
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const stageRef = useRef(null);
 
   const transitionTo = (next) => {
+    // If transitioning away, reset video playing state
+    setIsVideoPlaying(false);
+
     if (!stageRef.current) { 
       setStage(next); 
       return; 
@@ -105,7 +110,13 @@ export default function App() {
           <BirthdayCake onShowGallery={() => transitionTo('gallery')} />
         )}
         {stage === 'gallery' && (
-          <MemoryGallery onNext={() => transitionTo('wishcard')} />
+          <MemoryGallery onNext={() => transitionTo('video')} />
+        )}
+        {stage === 'video' && (
+          <VideoScreen 
+            onNext={() => transitionTo('wishcard')} 
+            onVideoPlayStateChange={(playing) => setIsVideoPlaying(playing)}
+          />
         )}
         {stage === 'wishcard' && (
           <BirthdayWishCard onNext={() => transitionTo('flower')} onRestart={() => transitionTo('splash')} />
@@ -115,9 +126,13 @@ export default function App() {
         )}
       </div>
 
-      {/* Spotify Player (hidden on splash & pin, autoplays after puzzle) */}
-      {showPlayer && <SpotifyPlayer autoPlay={stage !== 'splash' && stage !== 'pin' && stage !== 'puzzle'} />}
+      {/* Spotify Player (hidden on splash & pin, autoplays after puzzle, pauses when video is playing) */}
+      {showPlayer && (
+        <SpotifyPlayer 
+          autoPlay={stage !== 'splash' && stage !== 'pin' && stage !== 'puzzle'} 
+          forcePause={isVideoPlaying}
+        />
+      )}
     </div>
   );
 }
-

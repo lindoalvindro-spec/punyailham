@@ -63,7 +63,7 @@ export default function FlowerScreen({ onRestart }) {
     });
   }, []);
 
-  const petalEmojis = ['🍵', '🍃', '🌿', '💙', '✨', '🍵', '🌱'];
+  const petalEmojis = ['🍵', '🍃', '🌿', '💙', '✨', '🍵', '🌱', '🤍'];
 
   return (
     <div className="stage" ref={containerRef} style={{ position: 'relative', overflow: 'hidden', padding: '20px 14px' }}>
@@ -79,7 +79,7 @@ export default function FlowerScreen({ onRestart }) {
         {/* Soft Pink Tint Gradient Overlay */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(180deg, rgba(255, 240, 245, 0.4) 0%, rgba(255, 225, 235, 0.6) 100%)',
+          background: 'linear-gradient(180deg, rgba(240, 249, 255, 0.4) 0%, rgba(236, 248, 229, 0.6) 100%)',
           backdropFilter: 'blur(2px)',
         }} />
       </div>
@@ -92,11 +92,11 @@ export default function FlowerScreen({ onRestart }) {
             ref={(el) => (petalsRef.current[i] = el)}
             style={{
               position: 'absolute',
-              left: `${10 + i * 14}%`,
+              left: `${8 + i * 12}%`,
               top: '-5%',
               fontSize: '1.2rem',
               opacity: 0,
-              filter: 'drop-shadow(0 2px 6px rgba(200,59,100,0.3))',
+              filter: 'drop-shadow(0 2px 6px rgba(59,130,246,0.3))',
             }}
           >
             {emoji}
@@ -112,9 +112,9 @@ export default function FlowerScreen({ onRestart }) {
           padding: '6px 16px', borderRadius: 20, border: 'none',
           background: 'rgba(255, 255, 255, 0.88)',
           backdropFilter: 'blur(10px)',
-          color: 'var(--pink-deep)', fontFamily: 'var(--font-cute)',
+          color: '#1e40af', fontFamily: 'var(--font-cute)',
           fontSize: '0.74rem', fontWeight: 700, cursor: 'pointer',
-          boxShadow: '0 4px 14px rgba(45,16,30,0.12)',
+          boxShadow: '0 4px 14px rgba(15,23,42,0.12)',
           display: 'inline-flex', alignItems: 'center', gap: 6,
           transition: 'all 0.25s ease',
         }}
@@ -128,11 +128,11 @@ export default function FlowerScreen({ onRestart }) {
         style={{
           position: 'relative', zIndex: 5,
           width: '100%', maxWidth: landscapeMode ? '100%' : '390px',
-          background: 'linear-gradient(150deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 240, 245, 0.92) 100%)',
+          background: 'linear-gradient(150deg, rgba(255, 255, 255, 0.94) 0%, rgba(240, 249, 255, 0.92) 100%)',
           backdropFilter: 'blur(20px)',
           borderRadius: 28, padding: landscapeMode ? '16px' : '22px 18px',
-          border: '1.5px solid rgba(212, 163, 89, 0.35)',
-          boxShadow: '0 20px 50px rgba(45, 16, 30, 0.16), inset 0 0 25px rgba(255, 255, 255, 0.9)',
+          border: '1.5px solid rgba(96, 165, 250, 0.35)',
+          boxShadow: '0 20px 50px rgba(15, 23, 42, 0.16), inset 0 0 25px rgba(255, 255, 255, 0.9)',
           transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
           transform: landscapeMode ? 'rotate(90deg) scale(0.92)' : 'none',
           margin: landscapeMode ? '40px 0' : '0 auto',
@@ -157,13 +157,13 @@ export default function FlowerScreen({ onRestart }) {
           >
             <img
               src="/bucket%20bunga%202%20no%20bg.png"
-              alt="Flowers for my Pretty Girl"
+              alt="Flowers for Ilwan"
               style={{
                 width: '100%',
                 maxWidth: landscapeMode ? '180px' : '220px',
                 height: 'auto',
                 objectFit: 'contain',
-                filter: 'drop-shadow(0 12px 28px rgba(200, 59, 100, 0.28))',
+                filter: 'drop-shadow(0 12px 28px rgba(59, 130, 246, 0.28))',
               }}
               onError={(e) => { e.target.src = '/bunga%20buket%202%20no%20bg.png'; }}
             />
@@ -198,7 +198,7 @@ export default function FlowerScreen({ onRestart }) {
                 letterSpacing: '-0.5px',
                 textShadow: '0 2px 10px rgba(59, 130, 246, 0.2)',
               }}>
-                James 🍵✨
+                Ilwanku 🍵✨
               </h2>
             </div>
 
@@ -215,7 +215,7 @@ export default function FlowerScreen({ onRestart }) {
               textAlign: 'left',
             }}>
               <p style={{ marginBottom: 12, fontWeight: 500 }}>
-                Selamat ulang tahun yang ke-21, James. Semoga di usia yang baru ini, kamu senantiasa dikelilingi kebahagiaan, kedamaian, dan kehangatan. Terima kasih atas segala kebaikan dan inspirasi yang kamu hadirkan. 🍵✨
+                Selamat ulang tahun yang ke-18, Ilwan. Semoga di usia yang baru ini, kamu senantiasa dikelilingi kebahagiaan, kedamaian, dan kehangatan. Always be happy yaa! Doa terbaiks selalu dari Primces buat Ilwan. 🍵✨
               </p>
               
               <div style={{
@@ -227,7 +227,7 @@ export default function FlowerScreen({ onRestart }) {
                 color: '#1e40af',
                 lineHeight: 1.35,
               }}>
-                Selamat Ulang Tahun Ke-21, James 🍵✨
+                SELAMAT 18 TAHUN ILWANKU ✨🤍
               </div>
             </div>
 

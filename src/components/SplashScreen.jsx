@@ -30,14 +30,14 @@ export default function SplashScreen({ onStart }) {
       0.2
     );
 
-    // Floating Sparkling 20 Entrance
+    // Floating Sparkling 18 Entrance
     tl.fromTo(num20Ref.current,
       { opacity: 0, y: -20, scale: 0.7 },
       { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: 'back.out(2.2)' },
       0.4
     );
 
-    // Continuous Gentle Floating for 20 Badge
+    // Continuous Gentle Floating for 18 Badge
     gsap.to(num20Ref.current, {
       y: -8,
       duration: 2,
@@ -60,7 +60,7 @@ export default function SplashScreen({ onStart }) {
       0.8
     );
 
-    // Main Title Line (Sayangku 👑)
+    // Main Title Line (Ilwan Hanafi)
     tl.fromTo(line2Ref.current,
       { opacity: 0, y: 20, scale: 0.95 },
       { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out' },
@@ -122,8 +122,8 @@ export default function SplashScreen({ onStart }) {
     { emoji: '💙', top: '24%', right: '6%', size: '1.1rem' },
     { emoji: '🌿', bottom: '20%', left: '8%', size: '1.2rem' },
     { emoji: '💫', bottom: '18%', right: '7%', size: '1.2rem' },
-    { emoji: '🍵', top: '42%', left: '4%', size: '1rem' },
-    { emoji: '✨', top: '38%', right: '4%', size: '1.2rem' },
+    { emoji: '✨', top: '42%', left: '4%', size: '1rem' },
+    { emoji: '🤍', top: '38%', right: '4%', size: '1.2rem' },
   ];
 
   return (
@@ -132,16 +132,16 @@ export default function SplashScreen({ onStart }) {
       display: 'flex', flexDirection: 'column', alignItems: 'center',
       justifyContent: 'center', overflow: 'hidden', padding: '16px 0',
     }}>
-      {/* Background Hero Photo (james 1.jfif) */}
+      {/* Background Hero Photo (ilham 1.jpeg) */}
       <img
         ref={photoRef}
-        src="/james 1.jfif"
-        alt="Happy Birthday Sayangku"
+        src="/ilham 1.jpeg"
+        alt="Happy Birthday Ilwan"
         style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%',
           objectFit: 'cover', opacity: 0,
         }}
-        onError={(e) => { e.target.src = '/james 1.jfif'; }}
+        onError={(e) => { e.target.src = '/ilham 1.jpeg'; }}
       />
 
       {/* Luxury Dark Gradient Overlay for Maximum Readability */}
@@ -177,14 +177,14 @@ export default function SplashScreen({ onStart }) {
       {/* Main Birthday Exhibition Content */}
       <div style={{
         position: 'relative', zIndex: 3, textAlign: 'center',
-        padding: '0 20px', maxWidth: 350, width: '100%',
+        padding: '0 20px', maxWidth: 360, width: '100%',
       }}>
 
-        {/* Floating Sparkling 100 Badge */}
+        {/* Floating Sparkling 18 Badge */}
         <div ref={num20Ref} style={{ opacity: 0, marginBottom: 8, display: 'inline-block' }}>
           <div className="sparkling-20-badge">
             <span className="sparkle-icon-left">✨</span>
-            <span className="sparkling-20-text">21</span>
+            <span className="sparkling-20-text">18</span>
             <span className="sparkle-icon-right">🍵</span>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function SplashScreen({ onStart }) {
         }}>
           <Crown size={14} color="var(--gold-accent)" />
           <span className="sparkling-birthday-text">
-            Happy 21st Birthday! 🍵✨
+            Happy 18th Birthday! 🍵✨
           </span>
         </div>
 
@@ -213,13 +213,13 @@ export default function SplashScreen({ onStart }) {
           Special Exhibition Dedicated To
         </p>
 
-        {/* Main Title: James */}
+        {/* Main Title: Ilwan Hanafi */}
         <h1 ref={line2Ref} style={{
           fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#fff',
           lineHeight: 1.15, marginBottom: 10, opacity: 0,
           textShadow: '0 4px 20px rgba(59, 130, 246, 0.7), 0 0 35px rgba(122, 154, 96, 0.5)',
         }}>
-          James
+          Ilwan Hanafi
         </h1>
 
         {/* Birthday Wish Box & Tagline */}
@@ -230,7 +230,7 @@ export default function SplashScreen({ onStart }) {
               color: '#dcfce7', margin: 0, lineHeight: 1.3,
               textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             }}>
-              "Selamat Ulang Tahun yang ke-21, James" 🍵✨
+              "Selamat 18 Tahun Ilwanku ✨🤍"
             </p>
           </div>
 

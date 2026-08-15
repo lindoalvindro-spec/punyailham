@@ -22,8 +22,8 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
     );
 
     tl.fromTo(frameRef.current,
-      { boxShadow: '0 10px 30px rgba(212,163,89,0.1)' },
-      { boxShadow: '0 20px 50px rgba(200,59,100,0.2)', duration: 2.5, ease: 'sine.inOut', yoyo: true, repeat: -1 },
+      { boxShadow: '0 10px 30px rgba(59,130,246,0.1)' },
+      { boxShadow: '0 20px 50px rgba(59,130,246,0.25)', duration: 2.5, ease: 'sine.inOut', yoyo: true, repeat: -1 },
       0.5
     );
 
@@ -40,7 +40,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
     setTimeout(() => {
       confetti({
         particleCount: 100, spread: 100, origin: { y: 0.55 },
-        colors: ['#c83b64', '#e85d88', '#f497b5', '#d4a359', '#ffffff'],
+        colors: ['#3b82f6', '#7a9a60', '#93c5fd', '#a3c985', '#ffffff'],
         gravity: 0.7, scalar: 0.9,
       });
     }, 800);
@@ -57,7 +57,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
           borderRadius: 28, padding: '14px',
           border: '1.5px solid var(--glass-border)',
           position: 'relative', marginBottom: 24,
-          boxShadow: '0 16px 48px rgba(45,16,30,0.12)'
+          boxShadow: '0 16px 48px rgba(15,23,42,0.12)'
         }}>
           {/* Inner Invitation Border */}
           <div style={{
@@ -113,9 +113,9 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 boxShadow: '0 12px 32px rgba(59,130,246,0.25)',
                 position: 'relative', zIndex: 1
               }}>
-                <img src="/james 1.jfif" alt="James" style={{
+                <img src="/ilham 1.jpeg" alt="Ilwan" style={{
                   width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center'
-                }} onError={(e) => { e.target.src = '/james 1.jfif'; }} />
+                }} onError={(e) => { e.target.src = '/ilham 1.jpeg'; }} />
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#1e40af',
                 lineHeight: 1, margin: 0
               }}>
-                James 🍵✨
+                Ilwan Hanafi 🍵✨
               </h1>
             </div>
 
@@ -146,16 +146,16 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
               fontFamily: 'var(--font-body)', fontSize: '0.86rem', color: 'var(--berry-light)',
               lineHeight: 1.7, marginBottom: 24, fontStyle: 'italic', padding: '0 6px'
             }}>
-              "Selamat ulang tahun yang ke-21, James. Semoga setiap langkahmu senantiasa dipenuhi keberkahan, kesehatan, kedamaian, dan kelancaran di setiap perjalanan."
+              "yeay yeay! happy birthday to u ilwannn✨ doaa terbaiks dari primces buatt kamuu, i wish kamu selalu di kelilingi hal” baik & orang” baik juga pastinya! Semoga semua wishlist kamu tercapai yaa! ✨"
             </p>
 
             {/* Sign Off */}
             <div className="reveal-el" style={{ marginBottom: 10 }}>
               <p style={{ fontSize: '0.72rem', color: '#4a6b34', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 1.2, fontWeight: 700 }}>
-                With Warmest Regards & Best Wishes — Za 🍵✨
+                With Warmest Wishes — Primces 👑🤍
               </p>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: '#1e40af' }}>
-                Happy 21st Birthday, James 🍵✨
+                SELAMAT 18 TAHUN ILWANKU ✨🤍
               </p>
             </div>
 

@@ -94,7 +94,7 @@ export default function PuzzleScreen({ onComplete }) {
             fontFamily: 'var(--font-cute)', fontSize: '0.85rem', color: '#2563eb', 
             fontWeight: 600, opacity: 0.9
           }}>
-            Susun potongan kenangan untuk membuka galeri utama 🌿
+            Susun potongan kenangan Ilwan untuk membuka pesan spesial 🌿
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function PuzzleScreen({ onComplete }) {
                   <div style={{
                     width: '300%', height: '300%', position: 'absolute', 
                     top: `${-srcRow * 100}%`, left: `${-srcCol * 100}%`,
-                    backgroundImage: 'url(/james%203.jfif)', backgroundSize: 'cover',
+                    backgroundImage: 'url(/ilham%203.jpeg)', backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }} />
                 )}
@@ -183,13 +183,13 @@ export default function PuzzleScreen({ onComplete }) {
             }}>
               <div style={{
                 width: '85%', aspectRatio: '1', borderRadius: 16, overflow: 'hidden',
-                boxShadow: '0 12px 32px rgba(212,69,108,0.25)', marginBottom: 16
+                boxShadow: '0 12px 32px rgba(59,130,246,0.25)', marginBottom: 16
               }}>
-                <img src="/james 3.jfif" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="/ilham 3.jpeg" alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <span style={{ 
                 color: 'var(--pink-deep)', fontSize: '0.75rem', fontWeight: 700,
-                textTransform: 'uppercase', letterSpacing: 1, background: 'rgba(212,69,108,0.08)',
+                textTransform: 'uppercase', letterSpacing: 1, background: 'rgba(59,130,246,0.08)',
                 padding: '8px 16px', borderRadius: 20
               }}>Ketuk untuk menutup</span>
             </div>
@@ -211,7 +211,7 @@ export default function PuzzleScreen({ onComplete }) {
           </div>
         ) : (
           <button className="btn-ghost" onClick={autoSolve} style={{ 
-            width: '100%', background: 'rgba(212,69,108,0.04)', borderRadius: 16, 
+            width: '100%', background: 'rgba(59,130,246,0.06)', borderRadius: 16, 
             padding: '12px', fontSize: '0.85rem'
           }}>
             Lanjutkan Langsung

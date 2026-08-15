@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Heart, ArrowRight, Sparkles, Quote } from 'lucide-react';
+import { Heart, ArrowRight, Sparkles, Quote, Crown } from 'lucide-react';
 import gsap from 'gsap';
 
-// ─── 💌 Tab 1: Surat Content (High-End Romantic Birthday Letter) ───
+// ─── 💌 Tab 1: Surat Content (Surat dari Primces untuk Ilwan) ───
 function LetterTab() {
   const containerRef = useRef(null);
   const itemsRef = useRef([]);
@@ -43,8 +43,8 @@ function LetterTab() {
           width: 36, height: 12, background: 'rgba(122,154,96,0.4)',
           borderRadius: 2, backdropFilter: 'blur(4px)', zIndex: 10
         }} />
-        <img src="/james 5.jfif" alt="James" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          onError={(e) => { e.target.src = '/james 5.jfif'; }} />
+        <img src="/ilham 5.jpeg" alt="Ilwan" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          onError={(e) => { e.target.src = '/ilham 5.jpeg'; }} />
       </div>
 
       {/* Opening Badge Header */}
@@ -57,27 +57,32 @@ function LetterTab() {
         }}>
           <Sparkles size={13} color="#2563eb" />
           <span style={{ fontFamily: 'var(--font-cute)', fontSize: '0.8rem', fontWeight: 700, color: '#1e40af', letterSpacing: '0.5px' }}>
-            HAPPY 21ST BIRTHDAY, JAMES 🍵✨
+            HAPPY 18TH BIRTHDAY, ILWANKU 🍵✨
           </span>
         </div>
 
-        {/* Romantic Cursive Salutation */}
+        {/* Cursive Salutation */}
         <h3 style={{
           fontFamily: 'var(--font-display)', fontSize: '1.65rem', color: '#1e40af',
           lineHeight: 1.2, margin: '4px 0 10px 0'
         }}>
-          Dearest James,
+          Dearest Ilwannn ✨,
         </h3>
       </div>
 
       {/* Paragraph 1 */}
-      <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500, letterSpacing: '0.2px' }}>
-        Selamat ulang tahun yang ke-21, James. Semoga setiap langkahmu senantiasa dipenuhi keberkahan, kesehatan, dan kelancaran dalam meraih setiap impian baikmu.
+      <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 600, letterSpacing: '0.2px', color: '#1e40af' }}>
+        yeay yeay! happy birthday to u ilwannn✨
       </p>
 
       {/* Paragraph 2 */}
+      <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
+        doaa terbaiks dari primces buatt kamuu, i wish kamu selalu di kelilingi hal” baik & orang” baik juga pastinya🙆🏻‍♀️✨
+      </p>
+
+      {/* Paragraph 3 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 16, fontWeight: 500 }}>
-        Terima kasih telah menjadi pribadi yang hangat dan luar biasa. Bersyukur bisa mengenalmu dan menjadi bagian dari perjalanan yang berharga ini.
+        semoga semuaa wishlist kamuu tercapaii dengan cara yang baikk yaa! semangatt yapss, semoga allah mudahkan✨
       </p>
 
       {/* 🌟 Romantic Quote Highlight Box */}
@@ -101,30 +106,36 @@ function LetterTab() {
             lineHeight: 1.75,
             fontWeight: 600,
           }}>
-            "Setiap momen dan kenangan yang tercipta bersamamu selalu menjadi bagian berharga dalam perjalanan ini. Terima kasih telah hadir dan memberi banyak arti."
+            "alwayss be happyy yaa, kalo lagii sedii jangan ngerasa sendirii, ada ur family, ada temenn” kamu, dan pastinya ada primces hhe, kamuu bolee koo ceritaaa ke ak ya walaupun pasti gamau si, tapi yaudalaa"
           </p>
         </div>
       </div>
 
-      {/* Paragraph 3 */}
+      {/* Paragraph 4 */}
       <p ref={(el) => itemsRef.current.push(el)} style={{ marginBottom: 14, fontWeight: 500 }}>
-        Selamat bertambah usia. Semoga di usiamu yang baru ini, kamu senantiasa dikelilingi oleh kebahagiaan, kedamaian, dan orang-orang yang tulus menyayangimu.
+        aduh bingung mw bilang apalagi, pkonyaa...
       </p>
 
       {/* Handwritten Sign-Off Card */}
       <div ref={(el) => itemsRef.current.push(el)} style={{
-        marginTop: 22, padding: '16px 18px',
+        marginTop: 18, padding: '16px 18px',
         background: 'linear-gradient(135deg, #ffffff 0%, #eff6ff 50%, #ecf8e5 100%)',
         borderRadius: 20, border: '1.5px solid rgba(122,154,96,0.35)',
         textAlign: 'center', boxShadow: '0 6px 20px rgba(15,23,42,0.06)',
         clear: 'both',
       }}>
         <p style={{
-          fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#1e40af',
+          fontFamily: 'var(--font-display)', fontSize: '1.45rem', color: '#1e40af',
           lineHeight: 1.35, margin: 0, fontWeight: 700
         }}>
-          Selamat Ulang Tahun yang ke-21, James 🍵✨
+          SELAMAT 18 TAHUN ILWANKU ✨🤍
         </p>
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: 5, marginTop: 6,
+          fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: '#4a6b34', fontWeight: 700
+        }}>
+          <Crown size={14} color="#eab308" /> From: Primces 👑🤍
+        </div>
       </div>
     </div>
   );
@@ -150,31 +161,31 @@ function ImpianTab() {
 
   const dreams = [
     {
-      icon: '✈️',
-      badge: 'DREAM 01',
-      title: 'Closing The Distance',
-      text: 'Bisa segera ketemu, ngobrol langsung tanpa terhalang layar HP, dan jalan-jalan bareng menghabiskan waktu tanpa perlu buru-buru bilang pamit.',
+      icon: '✨',
+      badge: 'WISHLIST 01',
+      title: 'Wishlist Tercapai',
+      text: 'Semoga semua wishlist dan impian kamu tercapai dengan cara yang baik yaa! Semangatt yapss, semoga Allah mudahkan.',
       gradient: 'linear-gradient(135deg, rgba(96,165,250,0.2), rgba(163,201,133,0.3))',
     },
     {
-      icon: '🌟',
-      badge: 'DREAM 02',
-      title: 'Endless Support From Afar',
-      text: 'Meskipun jauh, aku bakal selalu ada buat dengerin cerita kamu, dukung setiap langkah, impian, dan karir James. You will never walk alone.',
+      icon: '🙆🏻‍♀️',
+      badge: 'HARAPAN 02',
+      title: 'Dikelilingi Hal & Orang Baik',
+      text: 'Doa terbaiks dari primces buat kamu, i wish kamu selalu dikelilingi hal-hal baik & orang-orang baik juga pastinya.',
       gradient: 'linear-gradient(135deg, rgba(59,130,246,0.2), rgba(220,252,231,0.4))',
     },
     {
-      icon: '📸',
-      badge: 'DREAM 03',
-      title: 'Creating Real Memories',
-      text: 'Bikin momen-momen manis baru di dunia nyata, foto bareng tanpa dipisah sinyal, dan merayakan ultah selanjutnya berdampingan.',
+      icon: '🤍',
+      badge: 'SUPPORT 03',
+      title: 'Jangan Ngerasa Sendiri',
+      text: 'Kalo lagi sedih jangan pernah ngerasa sendiri, ada ur family, temen-temen kamu, dan pastinya selalu ada primces!',
       gradient: 'linear-gradient(135deg, rgba(122,154,96,0.2), rgba(224,242,254,0.4))',
     },
     {
-      icon: '💍',
-      badge: 'DREAM 04',
-      title: 'Building Our Forever',
-      text: 'Merawat komitmen, kehangatan, dan rasa percaya ini dengan kuat sampai waktu membawa kita pada masa depan yang indah bersama.',
+      icon: '👑',
+      badge: 'MILESTONE 04',
+      title: 'Selamat 18 Tahun Ilwanku',
+      text: 'Langkah awal usia 18 tahun yang penuh dengan kebahagiaan, kedewasaan, dan kesuksesan di masa depan.',
       gradient: 'linear-gradient(135deg, rgba(59,130,246,0.2), rgba(163,201,133,0.35))',
     },
   ];
@@ -191,7 +202,7 @@ function ImpianTab() {
         <h4 style={{
           fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#1e40af',
           lineHeight: 1.2
-        }}>Harapan & Masa Depan 🌿</h4>
+        }}>Wishlist & Harapan 🌿</h4>
       </div>
 
       {dreams.map((item, i) => (
@@ -277,16 +288,16 @@ function WishesTab() {
         <h4 style={{
           fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#1e40af',
           lineHeight: 1.2
-        }}>Birthday Wishes & Prayers ✨</h4>
+        }}>Pesan & Doa Primces ✨</h4>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
         {[
-          <span>Semoga di usiamu yang ke-21 ini, James selalu diberikan kesehatan, kelancaran rezeki, dan perlindungan di mana pun kamu berada. 🤲🏻💖</span>,
-          <span>May your days be filled with endless joy and peace, and may the distance never fade that sweet, beautiful smile of yours! ✨</span>,
-          <span>Semoga rasa rindu di antara kita selalu jadi penguat ikatan cinta dan kedewasaan hubungan kita setiap harinya. 🌸</span>,
-          <span>May all your dreams, ambitions, and wishes at 21 come true beautifully, one by one. 🥂</span>,
-          <span>Terima kasih udah bertahan dan selalu memperjuangkan hubungan LDR ini bareng aku. Happy 21st Birthday, my love! 🎂🎁💝</span>
+          <span>Happy birthday to u Ilwannn! Doa terbaiks dari primces buat kamu di usia 18 tahun ini. 🤲🏻✨</span>,
+          <span>I wish kamu selalu dikelilingi hal-hal baik & orang-orang baik juga pastinya! 🙆🏻‍♀️🤍</span>,
+          <span>Semoga semua wishlist kamu tercapai dengan cara yang baik yaa! Semangat yaps, semoga Allah mudahkan. 🌟</span>,
+          <span>Always be happy yaa, kalo lagi sedih kamu boleh kok cerita ke aku kapan aja. 🌸</span>,
+          <span>Pokoknya SELAMAT 18 TAHUN ILWANKU! Sehat dan bahagia selalu! 🎂🎁🤍</span>
         ].map((item, i) => (
           <div key={i} ref={(el) => itemsRef.current.push(el)} style={{
             display: 'flex', gap: 12, alignItems: 'flex-start',
@@ -345,8 +356,8 @@ export default function LoveLetter({ onNext }) {
   };
 
   const tabs = [
-    { id: 'letter', label: '💌 Surat' },
-    { id: 'reasons', label: '🌿 Harapan' },
+    { id: 'letter', label: '💌 Surat Primces' },
+    { id: 'reasons', label: '🌿 Wishlist' },
     { id: 'wishes', label: '✨ Doa' },
   ];
 
@@ -385,7 +396,7 @@ export default function LoveLetter({ onNext }) {
           }}>Surat Ulang Tahun</h2>
           <p style={{
             fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#2563eb', fontWeight: 600,
-          }}>Untuk James 🍵✨</p>
+          }}>Untuk Ilwanku Dari Primces 👑✨</p>
 
           <div style={{
             marginTop: 24, fontSize: '0.75rem', fontWeight: 700,
@@ -411,10 +422,10 @@ export default function LoveLetter({ onNext }) {
             <h1 style={{
               fontFamily: 'var(--font-display)', fontSize: '1.85rem', color: '#1e40af',
               lineHeight: 1.15, marginBottom: 4,
-            }}>Happy Birthday, James! 🎂✨</h1>
+            }}>Happy Birthday, Ilwan! 🎂✨</h1>
             <p style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: '#4a6b34', fontWeight: 600,
-            }}>Pesan hangat dan doa terbaik di usiamu yang ke-21 🌿</p>
+            }}>Pesan tulus dan doa terbaik di usiamu yang ke-18 🌿</p>
           </div>
 
           {/* Navigation */}

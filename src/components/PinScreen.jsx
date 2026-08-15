@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Lock, Sparkles, AlertCircle, ShieldCheck } from 'lucide-react';
+import { Lock, Sparkles, AlertCircle, ShieldCheck, KeyRound } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function PinScreen({ onUnlock }) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
-  const correctPin = '111111';
+  const correctPin = '160808';
   const cardRef = useRef(null);
   const dotsRef = useRef([]);
   const lockRef = useRef(null);
@@ -68,7 +68,7 @@ export default function PinScreen({ onUnlock }) {
         border: '1.5px solid var(--glass-border)',
       }}>
         {/* Lock Icon */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 16 }}>
           <div ref={lockRef} style={{
             width: 62, height: 62, borderRadius: '50%',
             background: 'linear-gradient(145deg, #7a9a60, #3b82f6)',
@@ -86,12 +86,18 @@ export default function PinScreen({ onUnlock }) {
         }}>
           Akses Galeri Spesial 🍵✨
         </h1>
-        <p style={{
-          fontFamily: 'var(--font-cute)', fontSize: '0.82rem', color: '#2563eb',
-          textAlign: 'center', fontWeight: 600, marginBottom: 22, opacity: 0.9,
-        }}>
-          Masukkan kode sandi akses 🍵
-        </p>
+
+        {/* Clue Badge */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 5,
+            padding: '4px 14px', borderRadius: 20,
+            background: 'rgba(59, 130, 246, 0.12)', border: '1px dashed rgba(59, 130, 246, 0.4)',
+            color: '#1e40af', fontFamily: 'var(--font-cute)', fontSize: '0.8rem', fontWeight: 700
+          }}>
+            <KeyRound size={13} /> Clue: ur day ✨
+          </div>
+        </div>
 
         {/* PIN Dots */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: 10, marginBottom: 22 }}>
@@ -122,7 +128,7 @@ export default function PinScreen({ onUnlock }) {
             marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
             border: '1px solid rgba(212,69,108,0.25)',
           }}>
-            <AlertCircle size={14} /> Kode akses tidak sesuai. Silakan coba lagi.
+            <AlertCircle size={14} /> Kode akses salah. Ingat cluenya: "ur day"!
           </div>
         )}
 
