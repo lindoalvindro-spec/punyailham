@@ -278,10 +278,10 @@ export default function VideoScreen({ onNext, onVideoPlayStateChange }) {
             textAlign: 'center',
           }}>
             <p style={{
-              fontFamily: 'var(--font-cute)', fontSize: '0.78rem', color: '#1e40af',
-              fontWeight: 600, margin: 0,
+              fontFamily: 'var(--font-cute)', fontSize: '0.84rem', color: '#1e40af',
+              fontWeight: 700, margin: 0, letterSpacing: '0.3px',
             }}>
-              "Setiap detik kenangan selalu punya cerita indah bersamamu." ✨🤍
+              "a few memorable moments" ✨🤍
             </p>
           </div>
         </div>

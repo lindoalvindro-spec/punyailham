@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Download, RotateCcw, Sparkles, Crown, ArrowRight } from 'lucide-react';
+import { Download, RotateCcw, Sparkles, Crown, ArrowRight, Quote } from 'lucide-react';
 import gsap from 'gsap';
 import confetti from 'canvas-confetti';
 
@@ -17,7 +17,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
     
     tl.fromTo('.reveal-el', 
       { opacity: 0, y: 15 },
-      { opacity: 1, y: 0, stagger: 0.12, duration: 0.8, ease: 'power2.out' },
+      { opacity: 1, y: 0, stagger: 0.1, duration: 0.7, ease: 'power2.out' },
       "-=0.4"
     );
 
@@ -47,9 +47,9 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
   }, []);
 
   return (
-    <div className="stage stage--scroll">
+    <div className="stage stage--scroll" style={{ paddingBottom: '140px' }}>
       <div ref={cardRef} style={{
-        width: '100%', maxWidth: 380, opacity: 0, position: 'relative',
+        width: '100%', maxWidth: 390, opacity: 0, position: 'relative',
       }}>
         {/* Main Card Frame */}
         <div ref={frameRef} style={{
@@ -62,7 +62,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
           {/* Inner Invitation Border */}
           <div style={{
             border: '1px solid rgba(122,154,96,0.3)', borderRadius: 20,
-            padding: '36px 22px', textAlign: 'center', position: 'relative', overflow: 'hidden',
+            padding: '34px 20px', textAlign: 'center', position: 'relative', overflow: 'hidden',
             background: 'radial-gradient(circle at top, #ffffff 0%, #f0f9ff 50%, #ecf8e5 100%)'
           }}>
 
@@ -90,7 +90,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
               </div>
             </div>
 
-            {/* Circular Photo Frame with Left & Right Butterflies */}
+            {/* Circular Photo Frame with ilham 8.jpeg & Left/Right Butterflies */}
             <div className="reveal-el" style={{ 
               position: 'relative', width: 150, height: 150, margin: '0 auto 20px' 
             }}>
@@ -113,13 +113,13 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
                 boxShadow: '0 12px 32px rgba(59,130,246,0.25)',
                 position: 'relative', zIndex: 1
               }}>
-                <img src="/ilham 1.jpeg" alt="Ilwan" style={{
+                <img src="/ilham 8.jpeg" alt="Ilwan" style={{
                   width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center'
-                }} onError={(e) => { e.target.src = '/ilham 1.jpeg'; }} />
+                }} onError={(e) => { e.target.src = '/ilham 8.jpeg'; }} />
               </div>
             </div>
 
-            {/* Typography */}
+            {/* Header Labels */}
             <h3 className="reveal-el" style={{
               fontFamily: 'var(--font-cute)', fontSize: '0.8rem', color: '#4a6b34',
               letterSpacing: 2.5, textTransform: 'uppercase', marginBottom: 4, fontWeight: 700
@@ -127,7 +127,7 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
               Kartu Ucapan Ulang Tahun 🍵✨
             </h3>
             
-            <div className="reveal-el" style={{ textAlign: 'center', marginBottom: 18 }}>
+            <div className="reveal-el" style={{ textAlign: 'center', marginBottom: 16 }}>
               <h1 style={{
                 fontFamily: 'var(--font-display)', fontSize: '2.5rem', color: '#1e40af',
                 lineHeight: 1, margin: 0
@@ -138,24 +138,90 @@ export default function BirthdayWishCard({ onNext, onRestart }) {
 
             {/* Gold Accent Divider */}
             <div className="reveal-el" style={{
-              width: 50, height: 1.5, background: '#7a9a60', margin: '0 auto 20px', opacity: 0.8
+              width: 50, height: 1.5, background: '#7a9a60', margin: '0 auto 18px', opacity: 0.8
             }} />
 
-            {/* Message */}
-            <p className="reveal-el" style={{
-              fontFamily: 'var(--font-body)', fontSize: '0.86rem', color: 'var(--berry-light)',
-              lineHeight: 1.7, marginBottom: 24, fontStyle: 'italic', padding: '0 6px'
+            {/* Message Box */}
+            <div className="reveal-el" style={{
+              background: 'rgba(255, 255, 255, 0.85)',
+              borderRadius: 18,
+              padding: '16px 14px',
+              border: '1px solid rgba(96, 165, 250, 0.25)',
+              boxShadow: '0 4px 16px rgba(15, 23, 42, 0.05)',
+              textAlign: 'left',
+              marginBottom: 18,
+              lineHeight: 1.75,
+              fontSize: '0.85rem',
+              color: 'var(--berry)',
             }}>
-              "yeay yeay! happy birthday to u ilwannn✨ doaa terbaiks dari primces buatt kamuu, i wish kamu selalu di kelilingi hal” baik & orang” baik juga pastinya! Semoga semua wishlist kamu tercapai yaa! ✨"
-            </p>
+              <p style={{ fontWeight: 700, color: '#1e40af', marginBottom: 10, textAlign: 'center', fontSize: '0.92rem' }}>
+                yeay yeay! happy birthday to u ilwannn✨
+              </p>
+              
+              <p style={{ marginBottom: 10 }}>
+                doaa terbaiks dari primces buatt kamuu, i wish kamu selalu di kelilingi hal” baik & orang” baik juga pastinya🙆🏻‍♀️✨
+              </p>
+              
+              <p style={{ marginBottom: 10 }}>
+                semoga semuaa wishlist kamuu tercapaii dengan cara yang baikk yaa! semangatt yapss, semoga allah mudahkan✨
+              </p>
+              
+              <p style={{ marginBottom: 10 }}>
+                alwayss be happyy yaa, kalo lagii sedii jangan ngerasa sendirii, ada ur family, ada temenn” kamu, dan pastinya ada primces hhe, kamuu bolee koo ceritaaa ke ak ya walaupun pasti gamau si, tapi yaudalaa
+              </p>
+              
+              <p style={{ marginBottom: 12 }}>
+                aduh bingung mw bilang apalagi, pkonyaa...
+              </p>
+
+              {/* Special Big Wish Banner */}
+              <div style={{
+                background: 'linear-gradient(135deg, rgba(59,130,246,0.12), rgba(163,201,133,0.22))',
+                border: '1.5px dashed rgba(59,130,246,0.4)',
+                borderRadius: 14,
+                padding: '10px 12px',
+                textAlign: 'center',
+                marginBottom: 14,
+              }}>
+                <span style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '1.35rem',
+                  fontWeight: 700,
+                  color: '#1e40af',
+                }}>
+                  SELAMAT 18 TAHUN ILWANKU✨🤍
+                </span>
+              </div>
+
+              {/* Hindia Quote Box */}
+              <div style={{
+                background: 'linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%)',
+                border: '1px solid rgba(122,154,96,0.35)',
+                borderRadius: 14,
+                padding: '12px 14px',
+                position: 'relative',
+              }}>
+                <div style={{ display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+                  <Quote size={18} color="#2563eb" style={{ transform: 'rotate(180deg)', flexShrink: 0, marginTop: 2 }} />
+                  <div>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#4a6b34', textTransform: 'uppercase', letterSpacing: 0.8 }}>
+                      kalo kata hindia:
+                    </span>
+                    <p style={{ fontStyle: 'italic', fontWeight: 600, color: '#1e40af', fontSize: '0.84rem', marginTop: 2, lineHeight: 1.5 }}>
+                      ”segala doa yang baik adanya, untukmu & mimpimu yang mulia” 🤍✨
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Sign Off */}
-            <div className="reveal-el" style={{ marginBottom: 10 }}>
+            <div className="reveal-el" style={{ marginBottom: 6 }}>
               <p style={{ fontSize: '0.72rem', color: '#4a6b34', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 1.2, fontWeight: 700 }}>
                 With Warmest Wishes — Primces 👑🤍
               </p>
-              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.7rem', color: '#1e40af' }}>
-                SELAMAT 18 TAHUN ILWANKU ✨🤍
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: '#1e40af', margin: 0 }}>
+                Happy 18th Birthday, Ilwan 🍵✨
               </p>
             </div>
 
